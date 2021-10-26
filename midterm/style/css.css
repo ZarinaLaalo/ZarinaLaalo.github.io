@@ -1,0 +1,158 @@
+/************************************************
+                    DEFAULTS
+************************************************/
+
+html{
+    background-color:#aad4cf;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+
+#container{
+    width:1024px;
+    margin:0 auto;
+    background:#ddf0ed;
+    /* tried padding:10px; originally but it caused a padding for header image */
+}
+
+/************************************************
+                    HEADER AND NAV
+************************************************/
+
+.site-title{
+    /* note this is NOT responsive and the text is no longer centered when
+    the window size is manipulated */
+    color:white;
+    position:absolute;
+    top:18%;
+    left: 775px;
+    font-size:3.5em;
+    text-align: center;
+}
+
+.lonestarfishimg{
+    margin:0 0 20px 0; 
+}
+
+nav ul {
+    margin: 0px;
+}   
+
+nav ul li{
+    list-style-type: none;
+    /* tried border-right: 1px solid #000; put in [nav a] instead to 
+    allow modifications to [CONTACT] border */
+    display: inline-block;
+}
+
+/* .nav ul li:last-of-type{
+    border-right:none;
+} 
+Note: this didn't work to remove the last border line even when border
+was placed in nav [ul li] */
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-size:2em;
+    /* tried [float:left;] instead use inline-block for less wonky formatting*/
+    border-right: 1px solid black;
+    padding:0 97px;
+}
+
+.contact{
+    border:none;
+}
+
+/************************************************
+                    CONTENT
+************************************************/
+
+h2{
+    font-size:2em;
+    margin-top:1000px;
+    margin-bottom:0px;
+    margin: 0px;
+    font-weight:bold;
+}
+
+h3{
+    font-size:1.5em;
+    margin-bottom:0px;
+    font-weight:bold;
+}
+
+article {
+    padding: 25px 10px 10px 10px;
+}
+
+article ul {
+    padding-left: 20px;
+}
+
+footer{
+    text-align: right;
+    width:1004px;
+    margin:0 auto;
+    background:#ddf0ed;
+    padding: 10px 10px 20px 10px;
+}
+
+.lonestarfishimg{
+    width:23%;
+    float:left;
+    margin-right:10px;
+}
+
+/************************************************
+                    FORM
+************************************************/
+
+form{
+    border:black solid;
+    border-width:thin;
+    padding: 20px;
+}
+
+form > div {
+    margin-top: 10px;
+}
+
+#username{
+    height:20px;
+    width:100%;
+}
+
+#email{
+    height:20px;
+    width:100%;
+}
+
+input {
+    border: none;
+}
+
+textarea{
+    min-width:100%;
+    min-height:80px;
+    max-width:100%;
+    max-height:500px;
+}
+
+.visit{
+    font-size:22px;
+}
+
+button{
+    margin-top: 10px;
+    background:none;
+    color:inherit;
+    border:black solid;
+    border-width:thin;
+    font-family:inherit;
+    font-size:10px;
+    padding:10px;
+    outline:inherit;
+}
+    
