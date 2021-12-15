@@ -1,145 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/icons.css" rel="stylesheet">
-    <!-- <link href="styles/styles.css" rel="stylesheet"> -->
+    <link href="styles/styles.css" rel="stylesheet">
     <title>HTML Mock-Up</title>
 </head>
+
 <body>
     <div class="container">
         <header>
-            <img src="images/logo.png" alt="stars logo">
+            <div class="headerimage">
+                <img src="images/logo.png" alt="stars logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="about">About Us</a></li>
+                    <li><a href="#" id="services">Services</a></li>
+                    <li><a href="#" id="team">Team</a></li>
+                    <li><a href="#" id="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="searchbar">
+                <form id="navform">
+                    <input type="text" id="query" name="q" placeholder="Search">
+                    <button><i class="icon icon-zoom"></i></button>
+                </form>
+            </div>
         </header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-          <form id="form">
-            <input type="text" id="query" name="q" placeholder="Search">
-          <button><i class="icon icon-zoom"></i></button>
-        </form>  
-        </nav>
+
         <!-- This is the start of the main section of content. I'm not sure where the welcome to three star media should go... should it be part of an
         article that includes the header and the nav? -->
         <main>
             <article class="overlay">
-                <img src="images/main-banner.jpg" alt="Office Space">
-                <h1>Welcome to Three Star Media</h1>
-                <!-- Can we use any lorem ipsum text?  -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium lectus quam id. Vulputate dignissim suspendisse in est ante in.</p>
-                <button onclick="#" class="button1"> Connect with us <i class="icon icon-right"></i></button>
+                <div class="imgoverlay">
+                    <!-- <img src="images/main-banner.jpg" id="bannerimage" alt="Office Space"> -->
+                </div>
+                <div class="welcometext">
+                    <h1>Welcome to Three Star Media</h1>
+                    <!-- Can we use any lorem ipsum text?  -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Nibh ipsum consequat nisl vel pretium lectus quam id. Vulputate
+                        dignissim suspendisse in est ante in.</p>
+                    <button onclick="#" class="button1"> Connect with us <i class="icon icon-right"></i></button>
+                </div>
             </article>
+
             <!-- This might be the true main start of the website; what would above be categorized as, then? -->
             <article class="aboutus">
+                <div class="aboutimage">
                     <img src="images/about-us.jpg" alt="Ping Pong table in a lounge">
+                </div>
+                <div class="abouttext">
                     <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At volutpat diam ut venenatis tellus in metus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas volutpat blandit aliquam etiam erat velit. Elit ut aliquam purus sit amet luctus venenatis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. At volutpat diam ut venenatis tellus in metus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
+                </div>
             </article>
+
             <article class="services">
                 <h2>Our Services</h2>
-                <section class="digitaltransformation">
-                    <img src="images/digital.jpg" alt="user on laptop and mobile">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor.</p>
-                    <button onclick="#" class="button2"> Digital Plans <i class="icon icon-right"></i></button>
-                </section>
-                <section class="marketing">
-                    <img src="images/marketing.jpg" alt="laptop on a desk">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor.</p>
-                    <!-- Should the buttons each have a different class? Or can the buttons of the same size have the same class (i.e. this one and the previous one) -->
-                    <button onclick="#" class="button3"> Marketing Plans <i class="icon icon-right"></i></button>
-                </section>
-                <section class="video">
-                    <img src="images/video.jpg" alt="play icon on mobile screen">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor.</p>
-                    <button onclick="#" class="button4"> Video Plans <i class="icon icon-right"></i></button>
-                </section>
-                <section class="webdevelopment">
-                    <img src="images/web.jpg" alt="mobile phone and stylus on notebook">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor.</p>
-                    <button onclick="#" class="button5"> Web Plans <i class="icon icon-right"></i></button>
-                </section>
-                <section class="print">
-                    <img src="images/print.jpg" alt="newspaper stands">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor.</p>
-                    <button onclick="#" class="button6"> Print Plans <i class="icon icon-right"></i></button>
-                </section>
+                <div class="servicedesktop">
+                    <section class="digitaltransformation">
+                        <img src="images/digital.jpg" alt="user on laptop and mobile">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <button onclick="#" class="button2"> Digital Plans <i class="icon icon-right"></i></button>
+                    </section>
+                    <section class="marketing">
+                        <img src="images/marketing.jpg" alt="laptop on a desk">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <!-- Should the buttons each have a different class? Or can the buttons of the same size have the same class (i.e. this one and the previous one) -->
+                        <button onclick="#" class="button3"> Marketing Plans <i class="icon icon-right"></i></button>
+                    </section>
+                    <section class="video">
+                        <img src="images/video.jpg" alt="play icon on mobile screen">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <button onclick="#" class="button4"> Video Plans <i class="icon icon-right"></i></button>
+                    </section>
+                    <section class="webdevelopment">
+                        <img src="images/web.jpg" alt="mobile phone and stylus on notebook">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <button onclick="#" class="button5"> Web Plans <i class="icon icon-right"></i></button>
+                    </section>
+                    <section class="print">
+                        <img src="images/print.jpg" alt="newspaper stands">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <button onclick="#" class="button6"> Print Plans <i class="icon icon-right"></i></button>
+                    </section>
+                </div>
             </article>
             <article class="ourvision">
                 <!-- This section is styled a bit differently; white text overlayed on image -->
-                <img src="images/vision.jpg" alt="origami ships">
+                <!-- <img src="images/vision.jpg" alt="origami ships"> -->
                 <h3> Our Vision </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
                 <button onclick="#" class="learnmore"> Learn More <i class="icon icon-right"></i></button>
             </article>
             <article class="ourteam">
                 <h2>Our Team</h2>
                 <section class="john">
                     <img src="images/john.jpg" alt="man in front of graffiti wall">
-                    <h3>John Doe</h3>
-                    <span class="CEO"><em>CEO and Co-Owner</em></span>
-                    <!-- Should I take away <em> and use a heavier weight in CSS? -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra nibh cras pulvinar mattis. Sit amet tellus cras adipiscing enim eu turpis egestas.</p>
+                    <div class="johntext">
+                        <h3>John Doe</h3>
+                        <h4 class="CEO"><em>CEO and Co-Owner</em></h4>
+                        <!-- Should I take away <em> and use a heavier weight in CSS? -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Viverra nibh cras pulvinar mattis. Sit amet tellus cras
+                            adipiscing enim eu turpis egestas.</p>
+                    </div>
                 </section>
                 <section class="bob">
                     <img src="images/bob.jpg" alt="man in front of brick wall">
-                    <h3>Bob Rite</h3>
-                    <!-- did not add em here; which version is correct? Or is it just better to stay consistent -->
-                    <span class="CFO">CFO and Co-Owner</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra nibh cras pulvinar mattis. Sit amet tellus cras adipiscing enim eu turpis egestas.</p>
+                    <div class="bobtext">
+                        <h3>Bob Rite</h3>
+                        <!-- did not add em here; which version is correct? Or is it just better to stay consistent -->
+                        <h4 class="CFO">CFO and Co-Owner</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Viverra nibh cras pulvinar mattis. Sit amet tellus cras
+                            adipiscing enim eu turpis egestas.</p>
+                    </div>
                 </section>
             </article>
             <article class="contactus">
                 <!-- contains a contact form, an embedded map, and a table with hours of operation all in the same article -->
                 <h2>Contact Us</h2>
-                <div class="contact-form">
-                    <form class="form box">
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="fullname">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"></textarea>
-                        <input type="submit" name="submit" id="sumbit" value="Send">
-                    </form>
-                </div>
-                <div class="googlemapsEmbed">
-                    <h2>Location</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11580051551!2d-75.78995572089846!3d45.3499278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1637855122036!5m2!1sen!2sca" 
-                    width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
-                </div>
-                <div class="hoursofoperationTable">
-                    <h2>Hours of operation</h2>
-                  <table>
-                    <thead>
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday-Friday</td>
-                            <td>9 AM - 6 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </tbody>
-                 </table>
+                <div class="contactdesktopgrid">
+                    <div class="desktopform">
+                        <h3>Send us a message</h3>
+                        <div class="contact-form">
+                            <form class="formbox" action="index.html" method="post">
+                                <div>
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" id="fullname" name="fullname">
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" name="email">
+                                </div>
+                                <div>
+                                    <label for="message">Message</label>
+                                    <input type="text" id="message" name="message">
+                                </div>
+                                <button type="submit" form="formbox" name="submit" id="sumbit"
+                                    value="Send">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="hoursofoperationtable">
+                        <h3>Hours of operation</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday-Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="googlemaps">
+                        <h3>Location</h3>
+                        <div class="googlemapsembed">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11580051551!2d-75.78995572089846!3d45.3499278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1637855122036!5m2!1sen!2sca"
+                                width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                        </div>    
+                    </div>
                 </div>
             </article>
         </main>
@@ -149,4 +201,5 @@
         </footer>
     </div>
 </body>
+
 </html>
