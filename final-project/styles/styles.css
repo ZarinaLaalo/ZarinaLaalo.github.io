@@ -1,0 +1,670 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***********************************************
+                    Default Styling
+***********************************************/
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Noto+Serif:ital,wght@0,400;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 759px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+    margin: 50px 20px 20px 20px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 20px 0px 10px 20px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+
+
+/***********************************************
+                    NAV 
+***********************************************/
+
+header {
+    display: grid;
+    background-color: #222;
+    padding-bottom: 10px;
+}
+
+nav {
+    text-align: center;
+}
+
+li a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: transparent;
+
+}
+
+#navform {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    width: 100%;
+    height: 2rem;
+}
+
+.searchbar input {
+    width: 100%;
+    margin-left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c78c06;
+    grid-row-start: 1fr;
+    grid-row-end: 3fr;
+}
+
+.headerimage {
+    background: #c78c06;
+    height: 97px;
+    margin: 10px 10px 10px 10px;
+}
+
+.searchbar button {
+    background-color: #222;
+    margin-left: -5px;
+    border: 1px solid #c78c06;
+    margin-right: 10px;
+}
+
+.searchbar i {
+    color: #c78c06;
+    font-size: 20px;
+}
+
+#home {
+    color: #222;
+    background-color: #c78c06;
+    ;
+    border: 1px solid #c78c06;
+    padding-bottom: 10px;
+    margin-top: -11px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/***********************************************
+                    MAIN / Welcome
+***********************************************/
+
+.overlay {
+    background-image: url("../images/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.welcometext {
+    background: rgba(34, 34, 34, .5);
+    background-position: center center;
+    color: white;
+    width: 100%;
+    height: 80%;
+    align-content: flex-end;
+
+}
+
+.button1 {
+    margin: 0px 0px 20px 20px;
+    background: #c78c06;
+    padding: 30px;
+    font-size: 20px;
+}
+
+
+/***********************************************
+                    About us 
+***********************************************/
+.aboutus {
+    background: #ffe6ac;
+    padding-bottom: 10px;
+}
+
+.aboutus h2 {
+    padding-bottom: 10px;
+}
+
+.aboutus img {
+    max-width: 95%;
+    margin: 10px;
+    height: auto;
+}
+
+p {
+    margin: 20px;
+}
+
+/***********************************************
+                    our services 
+***********************************************/
+.services img {
+    width: 100%;
+}
+
+.services section {
+    background: #ffe6ac;
+    margin-bottom: 10px;
+}
+
+.services button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: white;
+    border: 1px solid #222;
+    background-color: #222;
+    padding: 20px;
+}
+
+.services i {
+    padding-left: 5px;
+}
+
+/***********************************************
+                    our vision 
+***********************************************/
+.ourvision {
+    background-image: url("../images/vision.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+}
+
+.ourvision {
+    color: white;
+
+}
+
+.ourvision h3 {
+    padding-top: 30px;
+}
+
+.ourvision button {
+    background: rgba(34, 34, 34, .5);
+    border: 1px solid #c78c06;
+    padding: 20px;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.ourvision i {
+    padding: 5px;
+}
+
+/***********************************************
+                    our team 
+***********************************************/
+
+.ourteam section {
+    background: #ffe6ac;
+    margin-bottom: 10px;
+}
+
+.ourteam h4 {
+    margin: 5px 0px 0px 20px;
+    border-bottom: 2px solid #c78c06;
+    border-width: 100%;
+    font-weight: bold;
+}
+
+.ourteam img {
+    width: 100%;
+}
+
+.ourteam p {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/***********************************************
+                    contact us 
+***********************************************/
+.contactus h2 {
+    margin-top: 40px;
+    margin-left: -20px;
+    padding-left: 2%;
+
+}
+
+.contactus h3 {
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.contactus input,
+textarea {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contactus form {
+    padding-bottom: 20px;
+}
+
+#message {
+    min-height: 100px;
+}
+
+.contactus button {
+    color: #c78c06;
+    background: #222;
+    margin-top: 10px;
+}
+
+/***********************************************
+                    Hours of Operation
+***********************************************/
+table {
+    width: 100%;
+    border: 1px solid #222;
+    margin-bottom: 20px;
+}
+
+th {
+    background: #ffe6ac;
+    border: 1px solid #222;
+    padding: 20px;
+}
+
+tr,
+td {
+    border: 1px solid #222;
+    padding: 20px;
+}
+
+/***********************************************
+                    Location
+***********************************************/
+    .googlemaps{
+    padding-bottom: 20px;
+    }
+
+    .googlemapsembed{
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+
+    .googlemapsembed iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+/***********************************************
+                    Footer
+***********************************************/
+
+footer {
+    background: #222;
+    color: #c78c06;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer a {
+    color: #c78c06;
+}
+
+/***********************************************
+                    MEDIA QUERY
+***********************************************/
+@media screen and (min-width: 760px) {
+    .container {
+        width: 1025px;
+        max-width: 1200px;
+    }
+
+    body {
+        font-size: 16px;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    /***********************************************
+                    NAV - DESKTOP
+***********************************************/
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    li {
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        margin-right: 15x;
+        font-size: 20px;
+    }
+
+
+    nav input {
+        width: 50%;
+        flex-grow: 2;
+    }
+
+
+    .searchbar {
+        width: fit-content;
+    }
+
+    #home {
+        color: #222;
+        background-color: #c78c06;
+        ;
+        border: 1px solid #c78c06;
+        margin-top: 20px;
+        padding: 20px 30px 20px 30px;
+    }
+
+    /***********************************************
+                    WELCOME - DESKTOP
+***********************************************/
+
+    .overlay {
+        margin-top: -20px;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+
+    .welcometext {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    /***********************************************
+                    ABOUT US - DESKTOP
+***********************************************/
+    .aboutus {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aboutimage {
+        width: 90%;
+        justify-self: end;
+    }
+
+    .abouttext {
+        width: 90%;
+        justify-self: start;
+    }
+
+
+    .abouttext h2 {
+        margin-left: 0px;
+        margin-bottom: -10px;
+    }
+
+    .abouttext p {
+        margin-left: 0px;
+    }
+
+
+    /***********************************************
+                    OUR SERVICES - DESKTOP
+***********************************************/
+    .services {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .services img {
+        margin-bottom: 20px;
+    }
+
+    .services h2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: -5px;
+    }
+
+    .services h3 {
+        font-size: 1.5rem;
+    }
+
+    .servicedesktop {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: stretch;
+        column-gap: 10px;
+    }
+
+    .digitaltransformation {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 1;
+    }
+
+    .marketing {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row: 1;
+    }
+
+    .video {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 2;
+    }
+
+    .webdevelopment {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row: 2;
+    }
+
+    .print {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row: 2;
+    }
+
+    /***********************************************
+                    OUR VISION - DESKTOP
+***********************************************/
+    .ourvision {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    /***********************************************
+                    OUR TEAM - DESKTOP
+***********************************************/
+    .ourteam {
+        margin-top: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .ourteam h2 {
+        margin-left: -10px;
+        margin-bottom: 20px;
+    }
+
+    .ourteam h3 {
+        margin-top: 20px;
+    }
+
+    .john {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .bob {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "a b";
+        margin-top: -10px;
+    }
+
+    .bob img {
+        grid-area: b;
+    }
+
+    /***********************************************
+                    CONTACT US - DESKTOP
+***********************************************/
+    .contactus {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .contactus h2 {
+        padding-bottom: 30px;
+    }
+
+    .contactdesktopgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    .contact-form button {
+        font-size: 20px;
+    }
+
+    .desktopform {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 1;
+    }
+
+    .googlemapsembed {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 1;
+        height:auto;
+        width: 100%;
+    }
+
+    .hoursofoperationtable {
+        margin-top:30px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 2;
+    }
+
+
+}
