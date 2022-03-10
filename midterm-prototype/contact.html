@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&family=Raleway:ital,wght@0,400;0,900;1,800&display=swap" rel="stylesheet">
+    <title>Midterm "Sweet Sentiments" Contact Page</title>
+</head>
+
+<body>
+    <picture>
+        <source srcset="images/all_pages/mobile_banner.svg" media="(max-width:719px)">
+        <source srcset="images/all_pages/desktop_banner.svg" media="(min-width:720px)">
+        <img src="images/all pages/desktop_banner.svg" alt="green banner with sprinkles">
+    </picture>
+    <div class="container">
+        <header>
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              
+                  <ul id="menu">
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="about.html"><li>ABOUT</li></a>
+                    <a href="contact.html"><li>CONTACT</li></a>
+                  </ul>
+                </div>
+                <a href="about.html"><img src="icons/logo.svg" id="logo" alt="company logo two cake pops with banner enclosed in heart"></a>
+              </nav>
+        </header>
+        <main class="contactmain">
+            <h1>Contact Us</h1>
+            <section class="generalinq">
+                <!-- <picture id="cakepopcontact">
+                <source srcset="images/contact/contact_cakepops_320.jpg,
+                                    images/contact/contact_cakepops_640.jpg 2x" 
+                                    media="(max-width:320px)">
+                        <source srcset="images/contact/contact_cakepops_480.jpg,
+                                    images/contact/contact_cakepops_960.jpg 2x" 
+                                    media="(max-width:480px)">
+                        <source srcset="images/contact/contact_cakepops_720.jpg,
+                                    images/contact/contact_cakepops_1440.jpg 2x" 
+                                    media="(max-width:720px)">
+                        <source srcset="images/contact/contact_cakepops_480.jpg,
+                                    images/contact/contact_cakepops_960.jpg 2x" 
+                                    media="(max-width:960px)">
+                        <source srcset="images/contact/contact_cakepops_640.jpg,
+                                    images/contact/contact_cakepops_1280.jpg 2x" 
+                                    media="(max-width:1280px)">
+                        <img src="images/contact/contact_cakepops_1280.jpg" 
+                            alt="tray of pink cakepops upside down in paper liners"> -->
+                </picture>
+                <h2><span id="gi">General Inquiries</span></h2>
+                <div class="overlay">
+                <img src="icons/email_icon_mobile.svg" alt="envelope with heart">
+                <span>info@sweetsentiments.com</span>
+                <img src="icons/phone_icon_mobile.svg" alt="phone with heart">
+                <span>(613) 123-4567</span>
+                </div>
+            </section>
+            <section class="orderform">
+                <h2>Order Form</h2>
+                <p>Let's make your next event a sweet sentiment! Contact us using the order form below 
+                    for custom orders and catering. We'll get in touch to discuss further details.
+                </p>
+                <div class="form">
+                    <form class="formbox" action="index.html" method="post">
+                    <div id="r1">
+                        <div class="fn">
+                            <label for="firstname">First Name*</label>
+                            <input type="text" id="firstname" name="firstname" required placeholder="John">
+                        </div>
+                        <div class="lm">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Smith">
+                        </div>
+                    </div>
+                    <div id="r2">
+                        <div class="ph">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(XXX)XXX-XXXX">
+                        </div>
+                        <div class="em">
+                            <label for="email">Email*</label>
+                            <input type="text" id="email" name="email" required placeholder="example@email.com">
+                        </div>
+                    </div>
+                        <div class="ms">
+                            <label for="message">Order Details*</label>
+                            <textarea type="text" id="message" name="message" required placeholder="Add some details about your order here (Ex. special events, dates, order amount, flavour preferences, dietary preferences, etc."></textarea>
+                        </div>
+                        <button type="submit" form="formbox" name="submit" class="redbutton" id="submit"
+                            value="Send">Submit Form</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <picture>
+            <source srcset="images/all_pages/mobile_banner.svg" media="(max-width:719px)">
+            <source srcset="images/all_pages/desktop_banner.svg" media="(min-width:720px)">
+            <img src="images/all pages/desktop_banner.svg" alt="green banner with sprinkles">
+        </picture>
+        <div class="footercontainer">
+        <p>© Copyright Zarina Laalo, 2022</p>
+        <div class="mediaicons">
+            <img src="icons/facebook.svg" alt="facebook icon">
+            <img src="icons/instagram.svg" alt="instagram icon">
+            <img src="icons/twitter.svg" alt="twitter icon">
+            <form id="subscribe">
+                <input type="text" id="email" name="email" placeholder="Type email here">
+                <button onclick="#" class="signupbutton">Sign Up for Newsletters</button>
+            </form>
+        </div>
+       </div> 
+    </footer>
+</body>
+
+</html>

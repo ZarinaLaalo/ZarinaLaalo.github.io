@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&family=Raleway:ital,wght@0,400;0,900;1,800&display=swap" rel="stylesheet">
+    <title>Midterm "Sweet Sentiments" Homepage</title>
+</head>
+
+<body>
+    <picture>
+        <source srcset="images/all_pages/mobile_banner.svg" media="(max-width:719px)">
+        <source srcset="images/all_pages/desktop_banner.svg" media="(min-width:720px)">
+        <img src="images/all pages/desktop_banner.svg" alt="green banner with sprinkles">
+    </picture>
+    <!-- container has nav menu, banner images, text, button (does not include footer;will be centered separately) -->
+    <div class="container">
+        <header>
+            
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <a href="about.html"><img src="icons/logo.svg" id="logo" alt="company logo two cake pops with banner enclosed in heart"></a>
+            </nav>
+        </header>
+
+        <!-- main consists of banner image, text, and button -->
+        <main class="mainhomepage">
+            <!-- banner image -->
+            <div class="homepageimg">
+                <picture>
+                    <source srcset="images/homepage/homepage_mb_320.jpg,
+                                    images/homepage/homepage_mb_640.jpg 2x" media="(max-width:320px)">
+                    <source srcset="images/homepage/homepage_mb_480.jpg,
+                                    images/homepage/homepage_mb_960.jpg 2x" media="(max-width:480px)">
+                    <source srcset="images/homepage/homepage_mb_720.jpg,
+                                    images/homepage/homepage_mb_1440.jpg 2x" media="(max-width:720px)">
+                    <source srcset="images/homepage/homepage_dt_320.jpg" media="(max-width:960px)">
+                    <source srcset="images/homepage/homepage_dt_480.jpg" media="(max-width:1280px)">
+                    <source srcset="images/homepage/homepage_dt_640.jpg" media="(max-width:1920px)">
+                    <img src="images/homepage/homepage_dt_1280.jpg"
+                        alt="picture reel of man and woman eating in front of a dessert table with different expressions">
+                </picture>
+            </div>
+            <!-- banner text -->
+            <div class="homepagetext">
+                <h1>Treat Your Temperaments</h1>
+                <p>Welcome to Sweet Sentiments, a home-style bakery business specializing in cake pops that can cater to
+                    your every mood.</p>
+                <p>We develop unique and custom flavors for your every whim and special occasions. Our products have
+                    unique flavors determined by a spectrum of moods or themes -- We can even make alterations based on
+                    personal dietary preferences. Check out our list of products or fill out an order form for your next
+                    treat!</p>
+                <!-- button -->
+                <button onclick="location.href='contact.html'" class="redbutton"> Order Here </button>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <picture>
+            <source srcset="images/all_pages/mobile_banner.svg" media="(max-width:719px)">
+            <source srcset="images/all_pages/desktop_banner.svg" media="(min-width:720px)">
+            <img src="images/all pages/desktop_banner.svg" alt="green banner with sprinkles">
+        </picture>
+        <div class="footercontainer">
+            <p>© Copyright Zarina Laalo, 2022</p>
+            <div class="mediaicons">
+                <img src="icons/facebook.svg" alt="facebook icon">
+                <img src="icons/instagram.svg" alt="instagram icon">
+                <img src="icons/twitter.svg" alt="twitter icon">
+                <form id="subscribe">
+                    <input type="text" id="email" name="email" placeholder="Type email here">
+                    <button onclick="#" class="signupbutton">Sign Up for Newsletters</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
