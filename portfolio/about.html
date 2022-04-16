@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xsv1yss.css" rel="stylesheet">
+    <title>Portfolio About Page</title>
+</head>
+
+<body>
+    <header>
+        <nav role="navigation">
+            <!-- hamburger menu -->
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <!-- links -->
+                <ul id="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- title in nav bar (only for horizontal menu; hide display for vertical menu) -->
+            <div class="menutitle"> ABOUT </div>
+            <!-- logo file -->
+            <a href="index.html"><img src="icons/logo.svg" id="logo" alt="logo for golden child creations"></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="aboutintro">
+                <h2>ABOUT<span class="yellowdot">.</span></h2>
+                <img src="icons/logowithtext.svg" id="fulllogoabout" alt="full logo with text for golden child creations">
+                <p><span class="boldpdk">golden child creations.</span> is the pseudonym for Ottawa based designer Zarina Laalo. The name is a play on her first name, which translates to "golden" while also describing her standards for excellence in design
+                    and production.
+                </p>
+            </section>
+            <section class="aboutdesigner">
+                <div class="center-left">
+                    <h2>DESIGNER<span class="yellowdot">.</span>
+                        <BR>CURATOR
+                        <span class="yellowdot">.</span>
+                        <BR>STORYTELLER
+                        <span class="yellowdot">.</span></h2>
+                </div>
+                <picture>
+                    <source srcset="images/about/about-designer-400.jpg" media="(max-width:600px)">
+                    <source srcset="images/about/about-designer-800.jpg" media="(max-width:900px)">
+                    <img src="images/about/about-designer-800.jpg" id="aboutdesignerimg" alt="designer standing in front of red door">
+                </picture>
+                <p>Zarina Laalo is a designer/curator with a bachelors in studio arts and a masters in art history. She has worked with museum and gallery exhibitions and public programming for over a decade. Zarina is currently a student in the Interactive
+                    Media Design program at Algonquin College.
+                </p>
+                <p>Zarina's theory, knowledge, and experiences in arts and curatorial practices is integral to her creative mindset and design approach. She is studying to learn new technical skills to help create innovative digital solutions to the field
+                    of exhibition design, but is also interested in working with design agencies that take on creative, unconventional clients. She is particularly interested in projects that involve user engagement and crafting interactive digital experiences.</p>
+            </section>
+            <section class="aboutexperiencefull">
+                <div class="aboutexperience">
+                    <h2>EXPERIENCE<span class="yellowdot">.</span>
+                        <button id="cvbutton"> <a href="files/ZLaalo_resume.pdf">FULL CV | PDF </a></button>
+                </div>
+                <div class="education">
+                    <h3>EDUCATION</h3>
+                    <picture id="timelineimg">
+                        <source srcset="icons/mobile-timeline.svg" media="(max-width:899px)">
+                        <source srcset="icons/desktop-timeline.svg" media="(min-width:900px)">
+                        <img src="icons/desktop-timeline.svg" id="timex" alt="education experience timeline">
+                    </picture> <span class="toptext">back to top </span>
+                </div>
+                <div class="aboutorgs">
+                    <h3>ORGANIZATIONS I'VE WORKED WITH</h3>
+                    <li>Vancouver Biennale</li>
+                    <li>ContentWorks Inc.</li>
+                    <li>Library and Archives Canada</li>
+                    <li>Canadian Museum of History</li>
+                    <li>WALL SPACE Gallery</li>
+                    <h3>PROFESSIONAL AWARDS</h3>
+                    <ul>
+                        <li>2020 - BC Heritage Award, Curator for exhibition "Weaving Cultural Identities"
+                    </ul>
+                    <h3>SKILLS</h3>
+                </div>
+                <div class="skillslist">
+
+                </div>
+            </section>
+        </div>
+        <section class="backtotopbuttons">
+            <div class="backtotopmobile">
+                <button onclick="topFunction()" id="myBtn1" title="Go to top"> 
+                    <picture>
+                        <source srcset="icons/mobile-top.svg" media="(max-width:899px)">
+                        <source srcset="icons/desktop-top.svg" media="(min-width:900px)">
+                        <img src="icons/mobile-top.svg" id="mobiletop" alt="back to top button">
+                    </picture> <span class="toptext">back to top </span>
+            </button>
+                <script>
+                    //Get the button
+                    var mybutton = document.getElementById("myBtn1");
+
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function() {
+                        scrollFunction()
+                    };
+
+                    function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                            mybutton.style.display = "block";
+                        } else {
+                            mybutton.style.display = "none";
+                        }
+                    }
+
+                    // When the user clicks on the button, scroll to the top of the document
+                    function topFunction() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    }
+                </script>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="logofulldiv">
+            <a href="index.html"><img src="icons/logowithtext.svg" id="fulllogo" alt="full logo for golden child creations with gcc text"></a>
+        </div>
+        <div class="footerright">
+            <div class="mediaicons">
+                <img src="icons/instagram.svg" alt="instagram icon">
+                <img src="icons/linkedin.svg" alt="linkedin icon">
+                <img src="icons/behance.svg" alt="behance icon">
+                <img src="icons/twitter.svg" alt="twitter icon">
+            </div>
+            <span>Copyright © 2022, Zarina Laalo</span>
+        </div>
+    </footer>
+</body>
+
+</html>
