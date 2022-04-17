@@ -660,25 +660,22 @@ max-width: 70px; */
                              margin-bottom: 10%;
                          }
                          
-                         .contactdirect {
-                             width: 80%;
-                             justify-content: center;
-                         }
-                         
-                         .contactdirect p {
+                         .linebreak {
+                             text-align: center;
                              font-family: capitana, sans-serif;
                              font-weight: 200;
                              font-style: normal;
                              color: #393E41;
-                             text-align: center;
-                             margin-bottom: 10%;
-                             margin-left: 20%;
                          }
                          
-                         .contactdirect p span {
+                         .linebreak span {
                              font-family: capitana, sans-serif;
                              font-weight: 700;
                              font-style: normal;
+                         }
+                         
+                         .linebreak p:first-child {
+                             margin-top: 10%;
                          }
                          /***********************************************
             MEDIA QUERY
