@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/styles2.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xsv1yss.css" rel="stylesheet">
     <title>Portfolio Works Page</title>
 </head>
@@ -37,10 +37,84 @@
 
     <main>
         <div class="container">
-            <h2>ABOUT<span class="yellowdot">.</span></h2>
+            <h2>WORKS<span class="yellowdot">.</span></h2>
+            <section class="sortby">
+                <ul id="sort">
+                    <li><a href="works.html">ALL WORKS</a></li>
+                    <li><a href="works.html">UX/UI DESIGN</a></li>
+                    <li><a href="works.html">BRANDING/IDENTITY</a></li>
+                    <li><a href="works.html">PRODUCTION/STORYTELLING</a></li>
+                    <li><a href="works.html">PUBLIC ENGAGEMENT</a></li>
+                </ul>
+            </section>
+            <section class="projectimgs">
+                <div>
+                    <div class="worksimg"></div>
+                    <a href="error.html"><img src="images/works/txtmuseum-900.jpg" id="kingeddy" alt=" images of king eddy website mockup"></a>
+                    <div class="textbox">
+                        <p>TEXTILE MUSEUM OF CANADA</p><span>UX/UI DESIGN</span></div>
+                </div>
+                <div>
+                    <div class="worksimg"></div>
+                    <a href="error.html"><img src="images/works/kingeddy-900.jpg" id="kingeddy" alt=" images of king eddy website mockup"></a>
+                    <div class="textbox">
+                        <p>KING EDDY WEBSITE</p><span>UX/UI DESIGN</span></div>
+                </div>
+                <div>
+                    <div class="worksimg">
+                        <a href="error.html"><img src="images/works/sweetsentiments-900.jpg" id="sweetsent" alt=" images of website mockup on laptop and mobile"></a>
+                    </div>
+                    <div class="textbox">
+                        <p>SWEET SENTIMENTS</p><span>BRANDING/IDENTITY</span></div>
+                </div>
+                <div>
+                    <div class="worksimg"></div>
+                    <a href="error.html"><img src="images/works/davidstea-900.jpg" id="davidstea" alt=" images of davidstea rebrand mockup"></a>
+                    <div class="textbox">
+                        <p>DAVIDsTEA REBRAND</p><span>BRANDING/IDENTITY</span></div>
+                </div>
+                <div>
+                    <div class="worksimg"></div>
+                    <a href="error.html"><img src="images/works/kingeddy-900.jpg" id="kingeddy" alt=" images of king eddy website mockup"></a>
+                    <div class="textbox">
+                        <p>KING EDDY WEBSITE</p><span>UX/UI DESIGN</span></div>
+                </div>
+                <div>
+                    <div class="worksimg"></div>
+                    <a href="error.html"><img src="images/works/kingeddy-900.jpg" id="kingeddy" alt=" images of king eddy website mockup"></a>
+                    <div class="textbox">
+                        <p>KING EDDY WEBSITE</p><span>UX/UI DESIGN</span></div>
+                </div>
+                <div>
+                    <div class="worksimg"></div>
+                    <a href="error.html"><img src="images/works/kingeddy-900.jpg" id="kingeddy" alt=" images of king eddy website mockup"></a>
+                    <div class="textbox">
+                        <p>KING EDDY WEBSITE</p><span>UX/UI DESIGN</span></div>
+                </div>
+                <div>
+                    <div class="worksimg"></div>
+                    <a href="error.html"><img src="images/works/kingeddy-900.jpg" id="kingeddy" alt=" images of king eddy website mockup"></a>
+                    <div class="textbox">
+                        <p>KING EDDY WEBSITE</p><span>UX/UI DESIGN</span></div>
+                </div>
+                <div>
+                    <div class="worksimg"></div>
+                    <a href="error.html"><img src="images/works/kingeddy-900.jpg" id="kingeddy" alt=" images of king eddy website mockup"></a>
+                    <div class="textbox">
+                        <p>KING EDDY WEBSITE</p><span>UX/UI DESIGN</span></div>
+                </div>
+            </section>
         </div>
+
+    </main>
+    <section class="backtotopbuttons">
         <div class="backtotopmobile">
-            <button onclick="topFunction()" id="myBtn1" title="Go to top"> <img src="icons/mobile-top.svg" id="mobiletop" alt="back to top button">
+            <button onclick="topFunction()" id="myBtn1" title="Go to top"> 
+                    <picture>
+                        <source srcset="icons/mobile-top.svg" media="(max-width:899px)">
+                        <source srcset="icons/desktop-top.svg" media="(min-width:900px)">
+                        <img src="icons/mobile-top.svg" id="mobiletop" alt="back to top button">
+                    </picture> <span class="toptext">back to top </span>
             </button>
             <script>
                 //Get the button
@@ -65,7 +139,9 @@
                     document.documentElement.scrollTop = 0;
                 }
             </script>
-    </main>
+        </div>
+    </section>
+
 
     <footer>
         <div class="logofulldiv">

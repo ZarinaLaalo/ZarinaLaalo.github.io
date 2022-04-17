@@ -76,43 +76,41 @@
             </div>
 
         </div>
-
-        <section class="backtotopbuttons">
-            <div class="backtotopmobile">
-                <button onclick="topFunction()" id="myBtn1" title="Go to top"> 
-                    <picture>
-                        <source srcset="icons/mobile-top.svg" media="(max-width:899px)">
-                        <source srcset="icons/desktop-top.svg" media="(min-width:900px)">
-                        <img src="icons/mobile-top.svg" id="mobiletop" alt="back to top button">
-                    </picture> <span class="toptext">back to top </span>
-            </button>
-                <script>
-                    //Get the button
-                    var mybutton = document.getElementById("myBtn1");
-
-                    // When the user scrolls down 20px from the top of the document, show the button
-                    window.onscroll = function() {
-                        scrollFunction()
-                    };
-
-                    function scrollFunction() {
-                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                            mybutton.style.display = "block";
-                        } else {
-                            mybutton.style.display = "none";
-                        }
-                    }
-
-                    // When the user clicks on the button, scroll to the top of the document
-                    function topFunction() {
-                        document.body.scrollTop = 0;
-                        document.documentElement.scrollTop = 0;
-                    }
-                </script>
-            </div>
-        </section>
     </main>
+    <section class="backtotopbuttons">
+        <div class="backtotopmobile">
+            <button onclick="topFunction()" id="myBtn1" title="Go to top"> 
+                <picture>
+                    <source srcset="icons/mobile-top.svg" media="(max-width:899px)">
+                    <source srcset="icons/desktop-top.svg" media="(min-width:900px)">
+                    <img src="icons/mobile-top.svg" id="mobiletop" alt="back to top button">
+                </picture> <span class="toptext">back to top </span>
+        </button>
+            <script>
+                //Get the button
+                var mybutton = document.getElementById("myBtn1");
 
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+        </div>
+    </section>
     <footer>
         <div class="logofulldiv">
             <a href="index.html"><img src="icons/logowithtext.svg" id="fulllogo" alt="full logo for golden child creations with gcc text"></a>
