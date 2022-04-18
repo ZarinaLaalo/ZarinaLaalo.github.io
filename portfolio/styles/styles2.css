@@ -154,14 +154,21 @@ height: 100%;
             width: 80%;
             margin: 0 auto;
         }
-        
-        h2 {
+        h1 {
             text-align: center;
             font-family: capitana, sans-serif;
             font-weight: 900;
             font-style: normal;
             color: #3F88C5;
             font-size: 30px;
+        }
+        h2 {
+            text-align: center;
+            font-family: capitana, sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            color: #3F88C5;
+            font-size: 24px;
         }
         
         h3 {
@@ -172,7 +179,7 @@ height: 100%;
             font-size: 20px;
         }
         
-        h2 span {
+        h1 span, h2 span {
             color: #E79B31;
         }
         /***********************************************
@@ -531,7 +538,10 @@ Mobile About Page
         /***********************************************
 Mobile Contact Page
 ***********************************************/
-        
+        #menutitlecontact{
+            margin-left:30%;
+            margin-right:30%;
+        }
         .subhead {
             font-size: 24px;
             text-align: center;
@@ -696,6 +706,38 @@ align-content: center; */
         .projectimgs div {
             width: 100%;
         }
+        /***********************************************
+WORKS MOBILE
+***********************************************/
+.errortext{
+font-size: 16px;
+    font-family: capitana, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #393E41;
+    line-height: normal;
+    margin-bottom: 10%;
+    margin-top:10%;
+}
+
+.backtolink{
+    text-align:center;
+    margin-bottom:10%;
+}
+.backtolink a{
+        color: #ED1C24;
+        font-size: 16px;
+        line-height: 2rem;
+        font-family: capitana, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align:center;
+}
+
+/* HOW DO I CENTER THIS VERTICALLY IN THE MIDDLE OF THE PAGE? SHOULD I JUST GIVE IT A LARGER TOP MARGIN? */
+#errorpg{
+    top:50%;
+}
 /***********************************************
 SERVICES MOBILE
 ***********************************************/
@@ -703,6 +745,7 @@ SERVICES MOBILE
     margin-left: 30%;
     margin-right:30%;
 }
+/* Tried 30% and it was wonky. Must find a better way to do this nav bar! */
 
 .aboutservices p{
     font-size: 16px;
@@ -735,6 +778,75 @@ SERVICES MOBILE
     text-align:center;
     margin-bottom:10%;
 }
+
+.skiptoservices {
+    margin-bottom:10%;
+}
+
+.skiptoservices ul li a {
+    color: red;
+    font-size: 20px;
+    line-height: 2rem;
+    font-family: capitana, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align:left;
+    line-height:40px;
+}
+
+    .skiptoservices span{
+    color:#393E41;
+    text-decoration: none;
+    font-weight:200;
+    }
+
+    .dkserv h2{
+    padding-top:10%;
+    color:#FBFBF2;
+    line-height: 40px;
+    }
+
+    .dkserv img{
+    width:80%;
+    margin:10%;
+    }
+    .dkserv{
+    background-color:#393E41;
+    margin-bottom:10%;
+    }
+    .dkserv p{
+    font-size: 16px;
+    font-family: capitana, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color:#FBFBF2;
+    line-height: normal;
+    padding-left:10%;
+    padding-right:10%;
+    padding-bottom:10%;
+    }
+
+    .ltserv img{
+        width:80%;
+        margin:10%;
+        }
+       
+        .ltserv p{
+        font-size: 16px;
+        font-family: capitana, sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        color:#393E41;
+        line-height: normal;
+        padding-left:10%;
+        padding-right:10%;
+        padding-bottom:10%;
+        }
+
+        .ltserv span{
+            font-weight:700;
+        }
+
         /***********************************************
 MEDIA QUERY
 ***********************************************/

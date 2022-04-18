@@ -29,52 +29,19 @@
                 </ul>
             </div>
             <!-- title in nav bar (only for horizontal menu; hide display for vertical menu) -->
-            <div class="menutitle"> HOME </div>
+            <div class="menutitle"> ERROR </div>
             <!-- logo file -->
             <a href="index.html"><img src="icons/logo.svg" id="logo" alt=" logo for golden child creations"></a>
         </nav>
     </header>
 
-    <main>
-        <div class="container">
-            <section class="homebanner">
-                <h1>HOME<span class="yellowdot">.</span></h1>
-            </section>
+    <main class="container" id="errorpg">
+        <h1>OOPS<span class="yellowdot">.</span></h1>
+        <p class="errortext">This page is not complete yet. Visit back soon for an update on this project, or contact golden child creations. directly for more details.</p>
+        <div class="backtolink">
+            <div><a href="contact.html">CONTACT FOR PROJECT INFO</a></div>
+            <div><a href="works.html">RETURN TO WORKS</a></div>
         </div>
-        <section class="backtotopbuttons">
-            <div class="backtotopmobile">
-                <button onclick="topFunction()" id="myBtn1" title="Go to top"> 
-                    <picture>
-                        <source srcset="icons/mobile-top.svg" media="(max-width:899px)">
-                        <source srcset="icons/desktop-top.svg" media="(min-width:900px)">
-                        <img src="icons/mobile-top.svg" id="mobiletop" alt="back to top button">
-                    </picture> <span class="toptext">back to top </span>
-            </button>
-                <script>
-                    //Get the button
-                    var mybutton = document.getElementById("myBtn1");
-
-                    // When the user scrolls down 20px from the top of the document, show the button
-                    window.onscroll = function() {
-                        scrollFunction()
-                    };
-
-                    function scrollFunction() {
-                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                            mybutton.style.display = "block";
-                        } else {
-                            mybutton.style.display = "none";
-                        }
-                    }
-
-                    // When the user clicks on the button, scroll to the top of the document
-                    function topFunction() {
-                        document.body.scrollTop = 0;
-                        document.documentElement.scrollTop = 0;
-                    }
-                </script>
-            </div>
-        </section>
     </main>
 
     <footer>
