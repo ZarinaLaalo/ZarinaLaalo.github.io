@@ -699,6 +699,11 @@ align-content: center; */
 /***********************************************
 SERVICES MOBILE
 ***********************************************/
+#menutitleserv{
+    margin-left: 38%;
+    margin-right:38%;
+}
+
 .aboutservices p{
     font-size: 16px;
     font-family: capitana, sans-serif;
