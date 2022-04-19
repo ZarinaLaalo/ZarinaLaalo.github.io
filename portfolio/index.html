@@ -38,45 +38,96 @@
     <main>
         <div class="container">
             <section class="homebanner">
-                <h1>HOME<span class="yellowdot">.</span></h1>
+                <div class="hometitle">
+                <h1>golden child creations<span class="yellowdot">.</span></h1>
+                <p>creating content with character</p>
+            </div>
+            </section>
+            <section class="recentwork">
+                <h2>RECENT WORK<span class="yellowdot">.</span></h2>
+                <div class ="keslide">
+                    <img src="images/works/kingeddy-900.jpg" id="keslide" alt="King Eddy Mockup Website">
+                    <h3>THE KING EDDY</h3>
+                    <p>UX/UI DESIGN</p>
+                    <p>A clever website re-design that utilizes UX/UI to offer better solutions towards client/user goals.</p>
+                </div>
+                <div class="ssslide">
+                    <img src="images/works/sweetsentiments-900.jpg" id="ssslide" alt="Sweet Sentiments Mockup Website">
+                    <h3>SWEET SENTIMENTS</h3>
+                    <p>BRANDING/IDENTITY</p>
+                    <p>Branding and identity development to widen demographic of target market audience.</p>
+                </div>
+                <div class="ckslide">
+                    <img src="images/works/ckd-900.jpg" id="ckslide" alt="Man writing in notebook">
+                    <h3>CKD INTERVIEW</h3>
+                    <p>PRODUCTION/STORYTELLING</p>
+                    <p>A video production about finding new purpose and passion through the study of user experience design.</p>
+                </div>
+                <div class="homebutton">
+                <button id="moreworksbutton"> <a href="works.html">MORE WORKS </a></button>
+            </div>
+            </section>
+            <section class="goldenstand">
+                <h2>GOLDEN STANDARDS<span class="yellowdot">.</span></h2>
+                <div>
+                  <img src="images/home/uxui-877.png" id="uxuist" alt="UXUI DESIGN: Putting users & clients first with design thinking practices.">
+                  <img src="images/home/bran-877.png" id="branst" alt="BRANDING/IDENTITY: Connecting with clients & use of strong designs to make visions a reality.">
+                  <img src="images/home/prod-877.png" id="prodst" alt="PRODUCTION/STORYTELLINGA proven understanding of human centric behaviour.">
+                  <img src="images/home/pub-877.png" id="pubst" alt="PUBLIC ENGAGEMENT:An emphasis on community and cultural experiences.">
+            </section>
+            <section class="thedesigner">
+                <h2>THE DESIGNER<span class="yellowdot">.</span></h2>
+                <picture>
+                    <source srcset="images/home/designer-mb-800.jpg" media="(max-width:900px)">
+                    <source srcset="images/home/designer-dt-800.jpg" media="(min-width:901px)">
+                    <img src="images/home/designer-dt-800.jpg" id="designerimg" alt="photo of designer in blurred out orange forest">
+            </picture>
+            </section>
+            <section class="contactdesigner">
+                <h2>LET'S TELL A STORY<span class="yellowdot">.</span></h2>
+                <p>Like what you see? Let's collaborate on a project! <span>golden child creations.</span> can offer out-of-the-box thinking, creative expertise, and quality results. Click the button below to send a message about working together.
+                </p>
+                <div class="homebutton">
+                    <button id="moreworksbutton"> <a href="contact.html">CONTACT ME </a></button>
+                </div>
             </section>
         </div>
-        <section class="backtotopbuttons">
-            <div class="backtotopmobile">
-                <button onclick="topFunction()" id="myBtn1" title="Go to top"> 
-                    <picture>
-                        <source srcset="icons/mobile-top.svg" media="(max-width:899px)">
-                        <source srcset="icons/desktop-top.svg" media="(min-width:900px)">
-                        <img src="icons/mobile-top.svg" id="mobiletop" alt="back to top button">
-                    </picture> <span class="toptext">back to top </span>
-            </button>
-                <script>
-                    //Get the button
-                    var mybutton = document.getElementById("myBtn1");
-
-                    // When the user scrolls down 20px from the top of the document, show the button
-                    window.onscroll = function() {
-                        scrollFunction()
-                    };
-
-                    function scrollFunction() {
-                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                            mybutton.style.display = "block";
-                        } else {
-                            mybutton.style.display = "none";
-                        }
-                    }
-
-                    // When the user clicks on the button, scroll to the top of the document
-                    function topFunction() {
-                        document.body.scrollTop = 0;
-                        document.documentElement.scrollTop = 0;
-                    }
-                </script>
-            </div>
-        </section>
     </main>
 
+    <section class="backtotopbuttons">
+        <div class="backtotopmobile">
+            <button onclick="topFunction()" id="myBtn1" title="Go to top"> 
+                <picture>
+                    <source srcset="icons/mobile-top.svg" media="(max-width:899px)">
+                    <source srcset="icons/desktop-top.svg" media="(min-width:900px)">
+                    <img src="icons/mobile-top.svg" id="mobiletop" alt="back to top button">
+                </picture> <span class="toptext">back to top </span>
+        </button>
+            <script>
+                //Get the button
+                var mybutton = document.getElementById("myBtn1");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+        </div>
+    </section>
     <footer>
         <div class="logofulldiv">
             <a href="index.html"><img src="icons/logowithtext.svg" id="fulllogo" alt="full logo for golden child creations with gcc text"></a>

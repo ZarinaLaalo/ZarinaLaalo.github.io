@@ -405,6 +405,107 @@ Mobile Button Back to Top
             display: none;
         }
         /***********************************************
+Mobile HOME Page
+***********************************************/
+.hometitle h1{
+    color:#393E41;
+}
+
+.hometitle p{
+    color:#3F88C5;
+    font-size: 19px;
+    text-align:center;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-bottom:10%;
+}
+
+.recentwork img{
+    width:100%;
+    margin-bottom:10%;
+}
+
+.recentwork h2{
+    margin-bottom:10%;      
+}
+
+#moreworksbutton{
+    background-color: #ED1C24;
+    border-radius: 57px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: capitana, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    border: none;
+    box-shadow: none;
+    margin-top: 10%;
+    color: #FBFBF2;
+    justify-content:center;
+}
+
+#moreworksbutton a{
+    color:#FBFBF2;
+    text-decoration:none;
+}
+
+.homebutton{
+    text-align:center;
+    margin-bottom:10%;
+}
+
+.goldenstand{
+    background:#393E41;
+    padding-top:5%;
+    padding-bottom:5%;
+    text-align:center;
+    margin-bottom:10%;
+}
+
+.goldenstand h2{
+    color:#FBFBF2;
+    margin-bottom:10%;
+}
+
+.goldenstand img{
+    margin-bottom:10%;
+    width:50%;
+}
+
+.contactdesigner p{
+    margin-top:10%;
+    font-family: capitana, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #393E41;
+    line-height: normal;
+}
+
+.contactdesigner span{
+    font-weight: 700;
+}
+
+.recentwork{
+    text-align:center;
+}
+.recentwork p{
+    font-family: capitana, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #393E41;
+    line-height: normal;
+}
+
+.recentwork p:nth-child(4){
+    margin-top:10%;
+    margin-bottom:10%;
+}
+
+
+        /***********************************************
 Mobile About Page
 ***********************************************/
         
@@ -426,9 +527,7 @@ Mobile About Page
         }
         
         .aboutintro span {
-            font-family: capitana, sans-serif;
             font-weight: 700;
-            font-style: normal;
         }
         
         .aboutdesigner {
@@ -846,6 +945,13 @@ SERVICES MOBILE
         .ltserv span{
             font-weight:700;
         }
+
+        .thedesigner img{
+            margin-top:10%;
+            margin-bottom:10%;
+            width:100%
+        }
+
 
         /***********************************************
 MEDIA QUERY
