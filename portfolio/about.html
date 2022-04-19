@@ -38,19 +38,17 @@
     <main>
         <div class="container">
             <section class="aboutintro">
-                <h1>ABOUT<span class="yellowdot">.</span></h1>
-                <img src="icons/logowithtext.svg" id="fulllogoabout" alt="full logo with text for golden child creations">
-                <p><span class="boldpdk">golden child creations.</span> is the pseudonym for Ottawa based designer Zarina Laalo. The name is a play on her first name, which translates to "golden" while also describing her standards for excellence in design
+                <div class="abouttitle"><h1>ABOUT<span class="yellowdot">.</span></h1></div>
+                <div class="gcclogoa"><img src="icons/logowithtext.svg" id="fulllogoabout" alt="full logo with text for golden child creations"></div>
+                <div class="introtext"><p><span class="boldpdk">golden child creations.</span> is the pseudonym for Ottawa based designer Zarina Laalo. The name is a play on her first name, which translates to "golden" while also describing her standards for excellence in design
                     and production.
-                </p>
+                </p></div>
             </section>
             <section class="aboutdesigner">
                 <div class="center-left">
                     <h2>DESIGNER<span class="yellowdot">.</span>
-                        <BR>CURATOR
-                        <span class="yellowdot">.</span>
-                        <BR>STORYTELLER
-                        <span class="yellowdot">.</span></h2>
+                        CURATOR<span class="yellowdot">.</span>
+                        STORYTELLER<span class="yellowdot">.</span></h2>
                 </div>
                 <picture>
                     <source srcset="images/about/about-designer-400.jpg" media="(max-width:600px)">
@@ -64,45 +62,55 @@
                     of exhibition design, but is also interested in working with design agencies that take on creative, unconventional clients. She is particularly interested in projects that involve user engagement and crafting interactive digital experiences.</p>
             </section>
             <section class="aboutexperiencefull">
-                <div class="aboutexperience">
-                    <h2>EXPERIENCE<span class="yellowdot">.</span>
-                        <button id="cvbutton"> <a href="files/ZLaalo_resume.pdf">FULL CV | PDF </a></button>
+                <div class="aboutexperience" id="abouttitlebutton">
+                    <h2>EXPERIENCE<span class="yellowdot">.</span></h2>
+                    <button id="cvbutton"> <a href="files/ZLaalo_resume.pdf">FULL CV | PDF </a></button>
                 </div>
                 <div class="education">
                     <h3>EDUCATION</h3>
+                    
                     <picture id="timelineimg">
-                        <source srcset="icons/mobile-timeline.svg" media="(max-width:899px)">
-                        <source srcset="icons/desktop-timeline.svg" media="(min-width:900px)">
+                        <source srcset="icons/mobile-timeline.svg" media="(max-width:799px)">
+                        <source srcset="icons/desktop-timeline.svg" media="(min-width:800px)">
                         <img src="icons/desktop-timeline.svg" id="timex" alt="education experience timeline">
                     </picture>
+               
                 </div>
                 <div class="aboutorgs">
+                    <div class="aboutorgs1">
                     <h3>ORGANIZATIONS I'VE WORKED WITH</h3>
+                    <ul>
                     <li>Vancouver Biennale</li>
                     <li>ContentWorks Inc.</li>
                     <li>Library and Archives Canada</li>
                     <li>Canadian Museum of History</li>
                     <li>WALL SPACE Gallery</li>
-                    <h3>PROFESSIONAL AWARDS</h3>
+                </ul>
+                </div>
+                <div class="aboutorgs2">
+                    <h3 id="awards">PROFESSIONAL AWARDS</h3>
                     <ul>
                         <li>2020 - BC Heritage Award, Curator for exhibition "Weaving Cultural Identities"
                     </ul>
+                </div>
+            </div>
+                <div>
                     <h3>SKILLS</h3>
                 </div>
+                
 
                 <!-- skills carousel -->
-                <!-- <div class="als-container" id="demo2">
-                    <span class="als-prev"><img src="images/thin_left_arrow_333.png" alt="prev" title="previous" /></span>
-                    <div class="als-viewport">
-                        <ul class="als-wrapper">
-                            <li class="als-item"><img src="icons/skills/ai.svg" alt="adobe illustrator" title="illustrator" /></li>
-                            <li class="als-item"><img src="icons/skills/psd.svg" alt="photoshop" title="photoshop" /></li>
-                            <li class="als-item"><img src="icons/skills/xd.svg" alt="adobe xd" title="xd" /></li>
-                            <li class="als-item"><img src="icons/skills/indd.svg" alt="indesign" title="indesign" /></li>
-                            <li class="als-item"><img src="icons/skills/prproj.svg" alt="premierepro" title="premierepro" /></li>
-                            <li class="als-item"><img src="icons/skills/html.svg" alt="html" title="html" /></li>
-                            <li class="als-item"><img src="icons/skills/css.svg" alt="css" title="css" /></li>
-                        </ul> -->
+                <section class="skillslist">
+                    <div class="scrolling-wrapper2">
+                        <div class=card2><img src="icons/skills/ai.svg" alt="adobe illustrator" title="illustrator"></div>
+                        <div class=card2><img src="icons/skills/psd.svg" alt="photoshop" title="photoshop"></div>
+                        <div class=card2><img src="icons/skills/xd.svg" alt="adobe xd" title="xd"></div>
+                        <div class=card2><img src="icons/skills/indd.svg" alt="indesign" title="indesign"></div>
+                        <div class=card2><img src="icons/skills/prproj.svg" alt="premierepro" title="premierepro"></div>
+                        <div class=card2><img src="icons/skills/html.svg" alt="html" title="html"></div>
+                        <div class=card2><img src="icons/skills/css.svg" alt="css" title="css"></div>
+                    </div>
+                    </section>
                 <!-- </div>
                     <span class="als-next"><img src="images/thin_right_arrow_333.png" alt="next" title="next" /></span>
                 </div> -->

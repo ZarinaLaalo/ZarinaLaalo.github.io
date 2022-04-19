@@ -459,10 +459,12 @@ Mobile HOME Page
 
 .goldenstand{
     background:#393E41;
-    padding-top:5%;
-    padding-bottom:5%;
+    padding-top:10%;
+    padding-bottom:10%;
     text-align:center;
     margin-bottom:10%;
+    margin-left:-15%;
+    margin-right:-15%;
 }
 
 .goldenstand h2{
@@ -471,9 +473,30 @@ Mobile HOME Page
 }
 
 .goldenstand img{
-    margin-bottom:10%;
-    width:50%;
+    /* margin-bottom:10%; */
+    width:30%;
 }
+
+.scrolling-wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap:10px;
+  -webkit-overflow-scrolling: touch;
+  margin-left:-250px;
+  margin-right:-250px;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+      display: none;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    margin-right:-600px;
+  }
+
+
 
 .contactdesigner p{
     margin-top:10%;
@@ -627,13 +650,42 @@ Mobile About Page
         
         .skillslist {
             background-color: #393E41;
-            padding-top: 10%;
+            padding-top: 40px;
+            padding-bottom:40px;
             margin-left: -20%;
             margin-right: -20%;
             padding-left: 20%;
             padding-right: 20%;
             margin-bottom: 10%;
         }
+
+        .skillslist img{
+            width:100px;
+        }
+
+
+        .scrolling-wrapper2{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding-left:-20px;
+            padding-right:-40px;
+        }
+
+        .card2{
+        flex: 0 0 auto;
+        padding-left:20px;
+        padding-right:20px;
+        }
+
+        .scrolling-wrapper2::-webkit-scrollbar {
+            display: none;
+        }
+        /* I hate the look of the scrollbar for mobile/tablet, but realize that it becomes difficult
+        to side scroll in browser view. Is there a function that allows it to be visible for browser, and not for 
+        touch devices?*/
+
         /***********************************************
 Mobile Contact Page
 ***********************************************/
@@ -837,6 +889,8 @@ font-size: 16px;
 #errorpg{
     top:50%;
 }
+
+
 /***********************************************
 SERVICES MOBILE
 ***********************************************/
@@ -887,7 +941,7 @@ SERVICES MOBILE
     font-size: 20px;
     line-height: 2rem;
     font-family: capitana, sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
     text-align:left;
     line-height:40px;
@@ -954,146 +1008,264 @@ SERVICES MOBILE
 
 
         /***********************************************
-MEDIA QUERY
+MEDIA QUERY - Tablet
 ***********************************************/
         
         @media screen and (min-width: 800px) {
-            @media screen and (min-width: 1200px) {
-                .container {
-                    height: 100%;
-                    position: absolute;
-                    left: 400px;
-                    padding: 10%;
-                    max-width: 1200px;
-                    /* UNSURE! Should I make this 1400? 1600? */
-                    margin: 0 auto;
-                    z-index: 1;
-                }
-                header {
-                    /* position: -webkit-sticky;*/
-                    /* position: fixed; */
-                    top: 0;
-                    left: 0;
-                    height: 100%;
-                    padding-left: 10%:
-                }
-                nav {
-                    background-color: #FBFBF2;
-                    margin-bottom: 5%;
-                    margin-top: -2%;
-                    display: flex;
-                    flex-direction: column-reverse;
-                    justify-content: flex-end;
-                    box-shadow: 3px 0 6px rgba(0, 0, 0, 16%);
-                    padding: 5%;
-                    max-width: 300px;
-                    height: 100vh;
-                    position: fixed;
-                    z-index: 2;
-                }
-                .menutitle {
-                    display: none;
-                }
-                #logo {
-                    width: 200px;
-                    position: sticky;
-                }
-                #menuToggle span {
-                    display: none;
-                }
-                #menu {
-                    position: relative;
-                    width: 225px;
-                    margin: 0;
-                    padding: 0;
-                    padding-top: 20px;
-                    background: none;
-                    -webkit-font-smoothing: none;
-                    /* to stop flickering of text in safari */
-                    opacity: 100%;
-                    transform: none;
-                    transition: none;
-                    display: flex;
-                    flex-direction: column;
-                    z-index: 3;
-                }
-                footer {
-                    padding-left: 25%;
-                    padding-bottom: -20px;
-                    padding-top: 20px;
-                    margin-bottom: 0;
-                    margin-left: 2%;
-                    align-items: center;
-                    clear: both;
-                    top: 0;
-                }
-                #menuToggle {
-                    margin-top: 5%;
-                }
-                #menuToggle li {
-                    color: #393E41;
-                    top: 50%;
-                }
-                #menuToggle a {
-                    text-decoration: none;
-                    display: contents;
-                    color: #393E41;
-                    transition: none;
-                    font-family: capitana, sans-serif;
-                    font-weight: 900;
-                    font-size: 160%;
-                    font-style: normal;
-                    position: sticky;
-                }
-                main {
-                    margin: 0 auto;
-                    height: 100%;
-                    position: relative;
-                    bottom: 0px;
-                    z-index: -1;
-                }
-                .logofulldiv {
-                    padding-left: 55px;
-                    margin-top: 20px;
-                }
-                .toptext {
-                    display: inline;
-                }
-                .footerright {
-                    margin-top: 20px;
-                }
-                .aboutintro,
-                .designer p {
-                    font-size: 24px;
-                }
-                /***********************************************
+        
+            h1{
+                font-size:48px;
+            }
+
+            h2{
+                font-size:38px;
+            }
+
+            h3{
+                font-size:24px;
+            }
+  /***********************************************
+TABLET - About Page
+***********************************************/              
+.aboutintro {
+    margin-bottom:0;
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(6, 1fr); 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . . abouttitle abouttitle abouttitle abouttitle abouttitle . . ."
+      ". . . . . . . . . . . ."
+      "gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
+      "gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
+      "gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
+      "gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . . . . . ."; 
+  }
+  .abouttitle { grid-area: abouttitle; }
+  .gcclogoa { grid-area: gcclogoa; }
+  .introtext { grid-area: introtext; }
+
+  .aboutdesigner{
+      justify-content:center;
+  }
+  .aboutdesigner img{
+      width:75%;
+      margin-left:12.5%;
+      margin-right:12.5%;
+  }
+
+  .aboutexperience {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;      
+    align-items: baseline;
+  }
+
+  .aboutexperience h2{
+      margin-top:0;
+      margin-bottom:10%;
+  }
+
+  #cvbutton {
+    margin-top:0;
+}
+
+.education img{
+    width:100%;
+    min-width: 650px;
+    max-width:1000px;
+    margin-bottom:10%;
+    margin-top:5%;
+}
+
+.aboutorgs {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . aboutorgs2 aboutorgs2 aboutorgs2 ."
+      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . aboutorgs2 aboutorgs2 aboutorgs2 ."
+      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . aboutorgs2 aboutorgs2 aboutorgs2 ."
+      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . . . . .";  
+  }
+  .aboutorgs2 { grid-area: aboutorgs2; }
+  .aboutorgs1 { grid-area: aboutorgs1; }
+
+
+.aboutexperiencefull h3 {
+    margin-top:0;
+    margin-bottom:24px;
+}
+
+}
+/***********************************************
+MEDIA QUERY
+***********************************************/
+      
+@media screen and (min-width: 1200px){
+    body{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+       grid-template-rows: repeat(7, 1fr); 
+        gap: 0px 0px; 
+        grid-template-areas: 
+       "header main main main main"
+       "header main main main main"
+       "header main main main main"
+       "header main main main main"
+       "header main main main main"
+       "header footer footer footer footer"
+       "header footer footer footer footer"; 
+   }
+   .main { grid-area: main; }
+   .header { grid-area: header; }
+   .footer { grid-area: footer; } 
+
+   h1{
+       font-size:60px;
+   }
+   h2{
+       font-size:48px;
+   }
+
+   h3{
+       font-size:24px;
+   }
+
+   .aboutintro p{
+    font-size:16px;
+   }
+
+    .container {
+        max-width: 1400px;
+        left: 400px;
+        padding: 10%;
+        margin: 0 auto;
+    }
+    /* UNSURE! Should I make this 1600? */
+    
+header {
+    top: 0;
+    left: 0;
+    /* height: 100%; */
+    padding-left: 10%:
+}
+nav {
+    background-color: #FBFBF2;
+    margin-bottom: 5%;
+    margin-top: -2%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 16%);
+    padding: 5%;
+    max-width: 300px;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+}
+.menutitle {
+    display: none;
+}
+#logo {
+    width: 200px;
+    position: sticky;
+}
+#menuToggle span {
+    display: none;
+}
+#menu {
+    position: relative;
+    width: 225px;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    background: none;
+    -webkit-font-smoothing: none;
+    /* to stop flickering of text in safari */
+    opacity: 100%;
+    transform: none;
+    transition: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+footer {
+    width:75%;
+    padding-left: 25%;
+    padding-bottom: -20px;
+    padding-top: 20px;
+    margin-bottom: 0;
+    margin-left: 2%;
+    align-items: center;
+    clear: both;
+}
+#menuToggle {
+    margin-top: 5%;
+}
+#menuToggle li {
+    color: #393E41;
+    top: 50%;
+}
+#menuToggle a {
+    text-decoration: none;
+    display: contents;
+    color: #393E41;
+    transition: none;
+    font-family: capitana, sans-serif;
+    font-weight: 900;
+    font-size: 160%;
+    font-style: normal;
+    position: sticky;
+}
+
+.logofulldiv {
+    padding-left: 55px;
+    margin-top: 20px;
+}
+.toptext {
+    display: inline;
+}
+.footerright {
+    margin-top: 20px;
+}
+.aboutintro,
+.designer p {
+    font-size: 24px;
+}
+/***********************************************
 DESKTOP - Back to Top BUTTON
 ***********************************************/
-                #myBtn1 {
-                    /* display: none; */
-                    /* Hidden by default */
-                    position: fixed;
-                    /* Fixed/sticky position */
-                    top: 80%;
-                    /* Place the button at the bottom of the page */
-                    left: 7%;
-                    /* Place the button 30px from the right */
-                    /* z-index: 99; Make sure it does not overlap */
-                    border: none;
-                    /* Remove borders */
-                    outline: none;
-                    /* Remove outline */
-                    background-color: none;
-                    /* Set a background color */
-                    cursor: pointer;
-                    /* Add a mouse pointer on hover */
-                    width: 100px;
-                    /* Increase font size */
-                    font-family: capitana, sans-serif;
-                    font-weight: 900;
-                    font-style: normal;
-                    color: #393E41;
-                    box-shadow: none;
-                    padding: 0px;
-                    z-index: 1000;
-                }
+#myBtn1 {
+    /* display: none; */
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    top: 80%;
+    /* Place the button at the bottom of the page */
+    left: 7%;
+    /* Place the button 30px from the right */
+    /* z-index: 99; Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: none;
+    /* Set a background color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    width: 100px;
+    /* Increase font size */
+    font-family: capitana, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #393E41;
+    box-shadow: none;
+    padding: 0px;
+    z-index: 1000;
+}
+
+}
+                    
+    
