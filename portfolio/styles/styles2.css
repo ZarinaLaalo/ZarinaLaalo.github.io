@@ -1041,6 +1041,7 @@ TABLET - About Page
       "gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
       "gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . . . . . ."; 
   }
+
   .abouttitle { grid-area: abouttitle; }
   .gcclogoa { grid-area: gcclogoa; }
   .introtext { grid-area: introtext; }
@@ -1048,6 +1049,7 @@ TABLET - About Page
   .aboutdesigner{
       justify-content:center;
   }
+
   .aboutdesigner img{
       width:75%;
       margin-left:12.5%;
@@ -1061,6 +1063,9 @@ TABLET - About Page
     align-items: baseline;
   }
 
+  #fulllogoabout{
+    margin-top:0;
+  }
   .aboutexperience h2{
       margin-top:0;
       margin-bottom:10%;
@@ -1078,20 +1083,6 @@ TABLET - About Page
     margin-top:5%;
 }
 
-.aboutorgs {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . aboutorgs2 aboutorgs2 aboutorgs2 ."
-      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . aboutorgs2 aboutorgs2 aboutorgs2 ."
-      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . aboutorgs2 aboutorgs2 aboutorgs2 ."
-      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . . . . .";  
-  }
-  .aboutorgs2 { grid-area: aboutorgs2; }
-  .aboutorgs1 { grid-area: aboutorgs1; }
-
 
 .aboutexperiencefull h3 {
     margin-top:0;
@@ -1104,7 +1095,7 @@ MEDIA QUERY
 ***********************************************/
       
 @media screen and (min-width: 1200px){
-    body{
+    /* body{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
        grid-template-rows: repeat(7, 1fr); 
@@ -1120,8 +1111,11 @@ MEDIA QUERY
    }
    .main { grid-area: main; }
    .header { grid-area: header; }
-   .footer { grid-area: footer; } 
+   .footer { grid-area: footer; }  */
 
+   main{
+       margin-left:30%;
+   }
    h1{
        font-size:60px;
    }
@@ -1135,6 +1129,11 @@ MEDIA QUERY
 
    .aboutintro p{
     font-size:16px;
+   }
+
+   .aboutdesigner{
+       margin-left:-30%;
+       margin-right:-30%;
    }
 
     .container {
@@ -1230,10 +1229,71 @@ footer {
 .footerright {
     margin-top: 20px;
 }
+/* Desktop About Page */
+
+.aboutintro {
+    margin-bottom:5%;
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(5, 1fr); 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . . abouttitle abouttitle abouttitle abouttitle abouttitle . . ."
+      ". . . . . . . . . . . ."
+      ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
+      ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
+      ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
+      ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext" 
+      ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"; 
+      ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . . . . . ."; 
+    }
+  .abouttitle { grid-area: abouttitle; }
+  .gcclogoa { grid-area: gcclogoa; }
+  .introtext { grid-area: introtext; }
+
 .aboutintro,
 .designer p {
     font-size: 24px;
 }
+
+.skillslist{
+    margin-left: -30%;
+    margin-right: -30%;
+    padding-left: 30%;
+}
+
+#fulllogoabout{
+    margin-top:0;
+    margin-left:10%;
+    width:60%;
+}
+
+.aboutdesigner {
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "center-left center-left center-left center-left center-left center-left center-left center-left center-left center-left center-left center-left"
+      "zimg zimg zimg zimg zimg . . ztext ztext ztext ztext ztext"
+      "zimg zimg zimg zimg zimg . . ztext ztext ztext ztext ztext"      
+      "zimg zimg zimg zimg zimg . . ztext ztext ztext ztext ztext"      
+      "zimg zimg zimg zimg zimg . . ztext ztext ztext ztext ztext"
+      "zimg zimg zimg zimg zimg . . ztext ztext ztext ztext ztext";  
+  }
+  .center-left { grid-area: center-left; }
+  .zimg { grid-area: zimg; }
+  .ztext { grid-area: ztext; }
+
+  .aboutdesigner img {
+    width:100%;
+    margin-top:0;
+    padding:0;
+    top:0;
+  }
+    #aboutdesignerimg {
+        margin-top: 0;
+    }
 /***********************************************
 DESKTOP - Back to Top BUTTON
 ***********************************************/
