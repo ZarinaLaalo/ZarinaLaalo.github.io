@@ -1297,7 +1297,7 @@ TABLET - WORKS Page
   }
 }
 /***********************************************
-MEDIA QUERY
+MEDIA QUERY - DESKTOP
 ***********************************************/
       
 @media screen and (min-width: 1200px){
@@ -1325,10 +1325,11 @@ MEDIA QUERY
     .container {
         max-width: 1400px;
         left: 400px;
-        padding: 10%;
+        padding: 7% 10% 7%;
         margin: 0 auto;
     }
     /* UNSURE! Should I make this 1600? */
+    
     
 header {
     top: 0;
@@ -1361,6 +1362,12 @@ nav {
 #menuToggle span {
     display: none;
 }
+/* WHY DOES HOVER STATE MAKE MY NAV BECOME GLITCHY? It works until I start to scroll through the page */
+/* #menuToggle a:hover{
+    color:#E79B31;
+} */
+
+
 #menu {
     position: relative;
     width: 225px;
@@ -1536,7 +1543,16 @@ DESKTOP - CONTACT page
         padding-top:10px;
         padding-bottom:10px;
     }
+/***********************************************
+DESKTOP - WORKS page
+***********************************************/
+.worksimg img{
+    opacity:35%;
+}
 
+.worksimg img:hover{
+    opacity:100%;
+}
     /***********************************************
 DESKTOP - SERVICES page
 ***********************************************/
@@ -1556,11 +1572,59 @@ DESKTOP - SERVICES page
   .dkserv .p { grid-area: p; }
 */
 
+.dkserv {
+    margin-bottom:5%;
+    display: grid; 
+    grid-template-columns: 1.3fr 1.6fr; 
+    grid-template-rows: 0.4fr 0.3fr 1.3fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "img h2"
+      "img ."
+      "img p1"
+      "img p2"; 
+  }
+  .dkserv img { 
+    grid-area: img;
+    width:75%;
+    margin-left:20%; 
+}
+  .dkp1 { grid-area: p1; }
+  .dkp2 { grid-area: p2; }
+  .dkserv h2 { 
+      grid-area: h2;
+      line-height:58px;
+      padding-top:20px; 
+    }
 
-
-.dkserv p{
+.dkserv p, .ltserv p{
     text-align:left;
+    padding-left:5%;
 } 
+
+.ltserv{
+    display:grid;
+    grid-template-columns: 1.6fr 1.3fr;
+    grid-template-rows: 0.4fr 0.3fr 1.3fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "h2a imga"
+    ". imga"
+    "p1a imga"
+    "p2a imga";
+}
+
+.ltserv img{
+    grid-area: imga;
+    width:75%;
+    margin-left:0;
+    margin-right:0;
+}
+
+.ltp1 { grid-area: p1a; }
+  .ltp2 { grid-area: p2a;}
+  .ltserv h2 { 
+      grid-area: h2a;
 /***********************************************
 DESKTOP - ERROR page
 ***********************************************/
@@ -1582,6 +1646,9 @@ DESKTOP - ERROR page
     margin-left:30%;
 }
 
+#oopst{
+    text-align:center;
+}
       
 /***********************************************
 DESKTOP - Back to Top BUTTON
