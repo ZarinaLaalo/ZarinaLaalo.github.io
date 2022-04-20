@@ -1150,24 +1150,33 @@ TABLET - Services Page
 .dkserv p, .ltserv p{
     padding-bottom: 5%;
 }
-
-.servgrid {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 0.25fr 0.25fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "regp regp regp regp linebreak . skipp skipp skipp skipp"
-      "regp regp regp regp linebreak . skipp skipp skipp skipp"
-      "regp regp regp regp . linebreak . skipp skipp skipp skipp";
-  }
-  
-  .skiptoservices { grid-area: skipp; }
-  .servgrid p { grid-area: regp;}
   
   .linebreak{
-    border-right:3px solid #393E41;
-    border-top:none;
-    grid-area:linebreak;
+    display:none;
+}
+
+.regp{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:70px;
+}
+
+.regptext{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.skiptoservices{
+    grid-column-start:2;
+    grid-column-end:3;
+}
+
+.skiptoservices h3{
+    text-align:left;
+}
+
+.dkserv p, .ltserv p{
+    text-align:center;
 }
   
 /***********************************************
@@ -1183,7 +1192,7 @@ TABLET - ERROR Page
     justify-content: space-evenly;
 
 }
-        }
+        }        
 /***********************************************
 TABLET - WORKS Page
 ***********************************************/
@@ -1196,6 +1205,7 @@ text-wrap:
     display:flex;
     flex-direction:row;
 } */
+
 
 @media screen and (min-width: 915px){
 .projectimgs{
@@ -1221,29 +1231,43 @@ text-wrap:
     justify-content: space-between;
     column-gap:20px;
 }
+
+.aboutdesigner {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 10%;
+    margin-left: -12.5%;
+    margin-right: -12.5%;
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "center-left center-left center-left center-left center-left center-left center-left center-left center-left center-left center-left center-left"
+      "zimg zimg zimg zimg zimg . . ztext ztext ztext ztext ztext"
+      "zimg zimg zimg zimg zimg . . ztext ztext ztext ztext ztext"      
+      "zimg zimg zimg zimg zimg . . ztext ztext ztext ztext ztext"      
+      "zimg zimg zimg zimg zimg . . ztext ztext ztext ztext ztext"
+      "zimg zimg zimg zimg zimg . . ztext ztext ztext ztext ztext";  
+  }
+  .center-left { grid-area: center-left; }
+  .zimg { grid-area: zimg; }
+  .ztext { grid-area: ztext; }
+
+  .aboutdesigner img{
+      width:100%;
+      margin:0;
+  }
+
+  .zimg{
+      margin:0;
+  }
 }
 /***********************************************
 MEDIA QUERY
 ***********************************************/
       
 @media screen and (min-width: 1200px){
-    /* body{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-       grid-template-rows: repeat(7, 1fr); 
-        gap: 0px 0px; 
-        grid-template-areas: 
-       "header main main main main"
-       "header main main main main"
-       "header main main main main"
-       "header main main main main"
-       "header main main main main"
-       "header footer footer footer footer"
-       "header footer footer footer footer"; 
-   }
-   .main { grid-area: main; }
-   .header { grid-area: header; }
-   .footer { grid-area: footer; }  */
 .body{
     max-width:1600px;
 }
@@ -1449,9 +1473,30 @@ DESKTOP - ABOUT page
         justify-content: center;
     }
 /***********************************************
-DESKTOP - WORK page
+DESKTOP - SERVICES page
 ***********************************************/
+/* .dkserv{
+    display: grid; 
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr; 
+    grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr; 
+    gap: 20px 10px; 
+    grid-template-areas: 
+      ". . . . . . . . . . . ."
+      ". img img img img img . h2 h2 h2 h2 ."
+      ". img img img img img . p p p p ."
+      ". . . . . . . . . . . ."; 
+  }
+  .dkserv img { grid-area: img; }
+  .dkserv h2 { grid-area: h2; }
+  .dkserv .p { grid-area: p; }
 
+.dkserv img, .ltserv img{
+    width:25%;
+}
+
+.dkserv p, .ltserv p{
+    text-align:left;
+} */
 /***********************************************
 DESKTOP - ERROR page
 ***********************************************/
@@ -1538,8 +1583,6 @@ DESKTOP - Back to Top BUTTON
     padding: 0px;
     z-index: 1000;
 }
-
-
 }
                     
     
