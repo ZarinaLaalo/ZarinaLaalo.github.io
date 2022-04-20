@@ -205,6 +205,7 @@ Mobile Nav Menu
             padding-left: 20%;
             padding-right: 20%;
             font-size: 24px;
+            z-index:10;
         }
         
         .menutitle {
@@ -226,7 +227,7 @@ Mobile Nav Menu
         #menuToggle {
             display: block;
             position: relative;
-            z-index: 1;
+            z-index: 20;
             -webkit-user-select: none;
             user-select: none;
         }
@@ -660,7 +661,7 @@ Mobile About Page
         }
 
         .skillslist img{
-            width:100px;
+            width:75px;
         }
 
 
@@ -812,9 +813,9 @@ WORKS MOBILE
         .projectimgs {
             text-align: center;
             width: 100%;
-            display: grid;
-            grid-template-rows: repeat(3, 1fr);
-            margin-bottom: 10%;
+            /* display: grid;
+            grid-template-rows: repeat(3, 1fr); */
+            /* margin-bottom: 10%; */
             /* justify-content: center;
 align-content: center; */
         }
@@ -831,10 +832,11 @@ align-content: center; */
             left: 0;
             right: 0;
             text-align: center;
-            padding-bottom: 2%;
             grid-row-start: 3;
             grid-row-end: 4;
-            margin-bottom:5%;
+            position: relative;
+            bottom: 75px;
+            height: 72px;
         }
         
         .textbox p {
@@ -1056,7 +1058,7 @@ TABLET - About Page
       margin-right:12.5%;
   }
 
-  .aboutexperience {
+  .aboutexperience{
     display: flex;
     flex-direction: row;
     justify-content: space-between;      
@@ -1070,6 +1072,20 @@ TABLET - About Page
       margin-top:0;
       margin-bottom:10%;
   }
+
+  .aboutorgs {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . aboutorgs2 aboutorgs2 aboutorgs2 ."
+      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . aboutorgs2 aboutorgs2 aboutorgs2 ."
+      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . aboutorgs2 aboutorgs2 aboutorgs2 ."
+      "aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 aboutorgs1 . . . . .";  
+  }
+  .aboutorgs2 { grid-area: aboutorgs2; }
+  .aboutorgs1 { grid-area: aboutorgs1; }
 
   #cvbutton {
     margin-top:0;
@@ -1244,7 +1260,7 @@ footer {
       ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
       ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
       ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext" 
-      ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"; 
+      ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext" 
       ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . . . . . ."; 
     }
   .abouttitle { grid-area: abouttitle; }
