@@ -861,6 +861,7 @@ align-content: center; */
             position: relative;
             bottom: 75px;
             height: 72px;
+            margin-bottom: -65px;
         }
         
         .textbox p {
@@ -1182,6 +1183,44 @@ TABLET - ERROR Page
     justify-content: space-evenly;
 
 }
+        }
+/***********************************************
+TABLET - WORKS Page
+***********************************************/
+/* .sortby{    
+display:flex;
+flex-direction:column;
+text-wrap:
+        }
+.sortby ul a{
+    display:flex;
+    flex-direction:row;
+} */
+
+@media screen and (min-width: 915px){
+.projectimgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    width:125%;
+    margin-left:-12.5%;
+}
+
+.projectimgs div:nth-child(odd){
+    grid-column-start:1;
+    grid-column-end:2;
+}
+
+.projectimgs div:nth-child(even){
+    grid-column-start:2;
+    grid-column-end:3;
+}
+.sortby ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    column-gap:20px;
+}
 }
 /***********************************************
 MEDIA QUERY
@@ -1409,6 +1448,10 @@ DESKTOP - ABOUT page
     .scrolling-wrapper2{
         justify-content: center;
     }
+/***********************************************
+DESKTOP - WORK page
+***********************************************/
+
 /***********************************************
 DESKTOP - ERROR page
 ***********************************************/
