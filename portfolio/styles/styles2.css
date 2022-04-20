@@ -190,6 +190,7 @@ Mobile Nav Menu
             position: -webkit-sticky;
             position: sticky;
             top: 0;
+            z-index:50;
         }
         
         nav {
@@ -330,8 +331,8 @@ Mobile Footer
             background-color: #3F88C5;
             display: flex;
             flex-direction: row;
-            padding-left: 20px;
-            padding-right: 20px;
+            /* padding-left: 20px;
+            padding-right: 20px; */
             width: 100%;
         }
         
@@ -464,8 +465,8 @@ Mobile HOME Page
     padding-bottom:10%;
     text-align:center;
     margin-bottom:10%;
-    margin-left:-15%;
-    margin-right:-15%;
+    /* margin-left:-10%;
+    margin-right:-10%; */
 }
 
 .goldenstand h2{
@@ -484,8 +485,8 @@ Mobile HOME Page
   overflow-x: auto;
   gap:10px;
   -webkit-overflow-scrolling: touch;
-  margin-left:-250px;
-  margin-right:-250px;
+  margin-left:-25%;
+  /* margin-right:-250px; */
 }
 
 .scrolling-wrapper::-webkit-scrollbar {
@@ -497,6 +498,24 @@ Mobile HOME Page
     margin-right:-600px;
   }
 
+  .scrolling-wrapper3{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap:10px;
+    -webkit-overflow-scrolling: touch;
+    
+    /* margin-right:-250px; */
+  }
+  
+  .scrolling-wrapper3::-webkit-scrollbar {
+        display: none;
+    }
+  
+    .card3 {
+      flex: 0 0 auto;
+      width:75%
+    }
 
 
 .contactdesigner p{
@@ -506,6 +525,8 @@ Mobile HOME Page
     font-style: normal;
     color: #393E41;
     line-height: normal;
+    margin-left: 10%;
+    margin-right:10%;
 }
 
 .contactdesigner span{
@@ -524,8 +545,10 @@ Mobile HOME Page
 }
 
 .recentwork p:nth-child(4){
-    margin-top:10%;
-    margin-bottom:10%;
+    margin-top:5%;
+    margin-bottom:5%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 
@@ -562,6 +585,8 @@ Mobile About Page
             padding-left: 20%;
             padding-right: 20%;
             margin-bottom: 10%;
+            margin-left: -12.5%;
+            margin-right: -12.5%;
             /* width: 100vw; */
         }
         
@@ -658,6 +683,8 @@ Mobile About Page
             padding-left: 10%;
             padding-right: 10%;
             margin-bottom: 10%;
+            margin-left: -12.5%;
+            margin-right: -12.5%;
         }
 
         .skillslist img{
@@ -694,7 +721,7 @@ Mobile Contact Page
             margin-left:30%;
             margin-right:30%;
         }
-        .subhead {
+        .contactgrid h2 {
             font-size: 24px;
             text-align: center;
             margin-top: 30px;
@@ -761,8 +788,10 @@ Mobile Contact Page
             color: #FBFBF2;
         }
         
-        .linebreak {
+        .linebreak{
             border-top: 3px solid #393E41;
+        }
+        .contactdirect {
             margin-top: 10%;
             margin-bottom: 10%;
             text-align: center;
@@ -770,21 +799,18 @@ Mobile Contact Page
             font-weight: 200;
             font-style: normal;
             color: #393E41;
+            line-height:normal;
+        }
+
+        .contactdirect p{
+            padding-top:20px;
+            padding-bottom:20px;
         }
         
-        .linebreak span {
+        .contactdirect span{
             font-family: capitana, sans-serif;
             font-weight: 700;
             font-style: normal;
-        }
-        
-        .linebreak p:first-child {
-            margin-top: 10%;
-        }
-        
-        .linebreak p,
-        .linebreak img {
-            margin-bottom: 10%;
         }
         /***********************************************
 WORKS MOBILE
@@ -887,7 +913,8 @@ font-size: 16px;
 
 /* HOW DO I CENTER THIS VERTICALLY IN THE MIDDLE OF THE PAGE? SHOULD I JUST GIVE IT A LARGER TOP MARGIN? */
 #errorpg{
-    top:50%;
+    margin-top:50%;
+    margin-bottom:50%;
 }
 
 
@@ -930,6 +957,7 @@ SERVICES MOBILE
 .aboutservices h3{
     text-align:center;
     margin-bottom:10%;
+    margin-top:10%;
 }
 
 .skiptoservices {
@@ -966,6 +994,8 @@ SERVICES MOBILE
     .dkserv{
     background-color:#393E41;
     margin-bottom:10%;
+    margin-left:-12.5%;
+    margin-right:-12.5%;
     }
     .dkserv p{
     font-size: 16px;
@@ -1102,7 +1132,56 @@ TABLET - About Page
     margin-top:0;
     margin-bottom:24px;
 }
+/***********************************************
+TABLET - Services Page
+***********************************************/
 
+.dkserv h2, .ltserv h2{
+    padding-top:5%;
+}
+.dkserv img, .ltserv img{
+    width:50%;
+    margin-left: 25%;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.dkserv p, .ltserv p{
+    padding-bottom: 5%;
+}
+
+.servgrid {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.25fr 0.25fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "regp regp regp regp linebreak . skipp skipp skipp skipp"
+      "regp regp regp regp linebreak . skipp skipp skipp skipp"
+      "regp regp regp regp . linebreak . skipp skipp skipp skipp";
+  }
+  
+  .skiptoservices { grid-area: skipp; }
+  .servgrid p { grid-area: regp;}
+  
+  .linebreak{
+    border-right:3px solid #393E41;
+    border-top:none;
+    grid-area:linebreak;
+}
+  
+/***********************************************
+TABLET - ERROR Page
+***********************************************/
+#errorpg{
+    margin-top:25%;
+    margin-bottom:25%;
+}
+
+.backtolink{
+    display:flex;
+    justify-content: space-evenly;
+
+}
 }
 /***********************************************
 MEDIA QUERY
@@ -1126,9 +1205,11 @@ MEDIA QUERY
    .main { grid-area: main; }
    .header { grid-area: header; }
    .footer { grid-area: footer; }  */
-
+.body{
+    max-width:1600px;
+}
    main{
-       margin-left:30%;
+       margin-left:20%;
    }
    h1{
        font-size:60px;
@@ -1172,8 +1253,9 @@ nav {
     flex-direction: column-reverse;
     justify-content: flex-end;
     box-shadow: 3px 0 6px rgba(0, 0, 0, 16%);
-    padding: 5%;
-    max-width: 300px;
+    padding-left: 0;
+    padding-right: 0;
+    width:20%;
     height: 100vh;
     position: fixed;
     z-index: 2;
@@ -1205,8 +1287,8 @@ nav {
     z-index: 3;
 }
 footer {
-    width:75%;
-    padding-left: 25%;
+    width:80%;
+    padding-left: 20%;
     padding-bottom: -20px;
     padding-top: 20px;
     margin-bottom: 0;
@@ -1216,6 +1298,9 @@ footer {
 }
 #menuToggle {
     margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+
 }
 #menuToggle li {
     color: #393E41;
@@ -1243,7 +1328,9 @@ footer {
 .footerright {
     margin-top: 20px;
 }
-/* Desktop About Page */
+/***********************************************
+DESKTOP - ABOUT page
+***********************************************/
 
 .aboutintro {
     margin-bottom:5%;
@@ -1283,6 +1370,11 @@ footer {
 }
 
 .aboutdesigner {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 10%;
+    margin-left: -12.5%;
+    margin-right: -12.5%;
     display: grid; 
     grid-template-columns: repeat(12, 1fr); 
     grid-template-rows: repeat(4, 1fr); 
@@ -1308,6 +1400,70 @@ footer {
     #aboutdesignerimg {
         margin-top: 0;
     }
+
+    .skillslist img{
+        width:100px;
+        margin-bottom: 0;
+    }
+
+    .scrolling-wrapper2{
+        justify-content: center;
+    }
+/***********************************************
+DESKTOP - ERROR page
+***********************************************/
+#errorpg{
+    margin-top:0;
+    margin-bottom:0;
+}
+
+#errorpg h1, #error p, #error div{
+    margin-left:30%;
+}
+
+.errortext{
+    width:60%;
+    margin-left:40%;
+}
+
+.backtolink{
+    margin-left:30%;
+}
+
+    /* Desktop Contact Page */
+
+    /* .contactgrid {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "subhead subhead subhead subhead subhead . . . . . . . . . . ."
+          ". . . . . . . . . . . . . . . ."
+          "form form form form form form form form linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
+          "form form form form form form form form linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
+          "form form form form form form form form linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
+          "form form form form form form form form linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
+          "form form form form form form form form linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
+          ". . . . . . . . linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
+          "formbutton formbutton formbutton . . . . . . contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly .";
+      }
+      
+      .subhead { grid-area: subhead; }
+      
+      .form { grid-area: form; }
+      
+      .linebreak { grid-area: linebreak; }
+      
+      .formbutton { grid-area: formbutton; }
+      
+      .contactdirectly { grid-area: contactdirectly; }
+
+      .linebreak{
+          border-right: 1px solid #393E41;  
+      }
+       */
+      
 /***********************************************
 DESKTOP - Back to Top BUTTON
 ***********************************************/
@@ -1339,6 +1495,7 @@ DESKTOP - Back to Top BUTTON
     padding: 0px;
     z-index: 1000;
 }
+
 
 }
                     
