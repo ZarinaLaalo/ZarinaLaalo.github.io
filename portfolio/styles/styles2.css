@@ -575,6 +575,7 @@ Mobile About Page
         
         .aboutintro span {
             font-weight: 700;
+            color:#393E41;
         }
         
         .aboutdesigner {
@@ -721,7 +722,7 @@ Mobile Contact Page
             margin-left:30%;
             margin-right:30%;
         }
-        .contactgrid h2 {
+        #subhead{
             font-size: 24px;
             text-align: center;
             margin-top: 30px;
@@ -788,7 +789,7 @@ Mobile Contact Page
             color: #FBFBF2;
         }
         
-        .linebreak{
+        .linebreak1{
             border-top: 3px solid #393E41;
         }
         .contactdirect {
@@ -1065,7 +1066,6 @@ TABLET - About Page
     grid-template-rows: repeat(6, 1fr); 
     gap: 0px 0px; 
     grid-template-areas: 
-      ". . . . abouttitle abouttitle abouttitle abouttitle abouttitle . . ."
       ". . . . . . . . . . . ."
       "gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
       "gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
@@ -1073,7 +1073,7 @@ TABLET - About Page
       "gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . . . . . ."; 
   }
 
-  .abouttitle { grid-area: abouttitle; }
+  /* .abouttitle { grid-area: abouttitle; } */
   .gcclogoa { grid-area: gcclogoa; }
   .introtext { grid-area: introtext; }
 
@@ -1192,20 +1192,53 @@ TABLET - ERROR Page
     justify-content: space-evenly;
 
 }
+
+/***********************************************
+TABLET - CONTACT Page
+***********************************************/
+#r1{
+    display:flex;
+    justify-content:space-between;
+    column-gap:40px;
+}
+
+#r1 input{
+    display:inline;
+    padding:4%;
+}
+
+.formbutton{
+    text-align:left;
+    margin-bottom: 10%;
+}
+
+.contactdirect{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:no-wrap;
+    column-gap:10%;
+}
+
+.r2{
+    display:grid;
+    grid-template-columns: 0.5fr 2fr;
+    column-gap: 40px;
+}
+
+.r2 p{
+    text-align:left;
+}
+
+.r2 img{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+
         }        
 /***********************************************
 TABLET - WORKS Page
 ***********************************************/
-/* .sortby{    
-display:flex;
-flex-direction:column;
-text-wrap:
-        }
-.sortby ul a{
-    display:flex;
-    flex-direction:row;
-} */
-
 
 @media screen and (min-width: 915px){
 .projectimgs{
@@ -1273,7 +1306,8 @@ MEDIA QUERY
    main{
        margin-left:20%;}
    h1{
-       font-size:60px;}
+       font-size:60px;
+        text-align:left;}
    h2{
        font-size:48px;}
    h3{
@@ -1388,7 +1422,9 @@ footer {
 /***********************************************
 DESKTOP - ABOUT page
 ***********************************************/
-
+.abouttitle h1{
+    text-align:left;
+}
 .aboutintro {
     margin-bottom:5%;
     display: grid; 
@@ -1396,7 +1432,7 @@ DESKTOP - ABOUT page
     grid-template-rows: repeat(5, 1fr); 
     gap: 0px 0px; 
     grid-template-areas: 
-      ". . . . abouttitle abouttitle abouttitle abouttitle abouttitle . . ."
+      "abouttitle abouttitle abouttitle abouttitle abouttitle . . . . . . ."
       ". . . . . . . . . . . ."
       ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
       ". gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa gcclogoa . introtext introtext introtext introtext introtext"
@@ -1417,7 +1453,7 @@ DESKTOP - ABOUT page
 
 #fulllogoabout{
     margin-top:0;
-    margin-left:10%;
+    margin-left:-5%;
     width:60%;
 }
 
@@ -1460,6 +1496,45 @@ DESKTOP - ABOUT page
 
     .scrolling-wrapper2{
         justify-content: center;
+    }
+
+    /***********************************************
+DESKTOP - CONTACT page
+***********************************************/
+.contactgrid{
+    display:flex;
+    column-gap: 5%;
+    margin-left:-5%;
+}
+.linebreak1{
+    border-top:none;
+    border-left: 3px solid #393E41;
+}
+   
+.contactdirect{
+        display:block;
+        margin-top:0;
+        padding-top:0;
+    }
+    
+    .r2{
+        display:block;
+    }
+
+    .r2 p{
+        text-align:center;
+    }
+
+    #subhead{
+        text-align:left;
+        font-size:36px;
+        margin-top:5%;
+        margin-bottom:5%;
+    }
+
+    .contactdirect p {
+        padding-top:10px;
+        padding-bottom:10px;
     }
 
     /***********************************************
@@ -1507,39 +1582,6 @@ DESKTOP - ERROR page
     margin-left:30%;
 }
 
-    /* Desktop Contact Page */
-
-    /* .contactgrid {  display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "subhead subhead subhead subhead subhead . . . . . . . . . . ."
-          ". . . . . . . . . . . . . . . ."
-          "form form form form form form form form linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
-          "form form form form form form form form linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
-          "form form form form form form form form linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
-          "form form form form form form form form linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
-          "form form form form form form form form linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
-          ". . . . . . . . linebreak contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly ."
-          "formbutton formbutton formbutton . . . . . . contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly contactdirectly .";
-      }
-      
-      .subhead { grid-area: subhead; }
-      
-      .form { grid-area: form; }
-      
-      .linebreak { grid-area: linebreak; }
-      
-      .formbutton { grid-area: formbutton; }
-      
-      .contactdirectly { grid-area: contactdirectly; }
-
-      .linebreak{
-          border-right: 1px solid #393E41;  
-      }
-       */
       
 /***********************************************
 DESKTOP - Back to Top BUTTON
