@@ -1269,21 +1269,15 @@ MEDIA QUERY
       
 @media screen and (min-width: 1200px){
 .body{
-    max-width:1600px;
-}
+    max-width:1600px;}
    main{
-       margin-left:20%;
-   }
+       margin-left:20%;}
    h1{
-       font-size:60px;
-   }
+       font-size:60px;}
    h2{
-       font-size:48px;
-   }
-
+       font-size:48px;}
    h3{
-       font-size:24px;
-   }
+       font-size:24px;}
 
    .aboutintro p{
     font-size:16px;
@@ -1306,7 +1300,7 @@ header {
     top: 0;
     left: 0;
     /* height: 100%; */
-    padding-left: 10%:
+    /* padding-left: 10%; */
 }
 nav {
     background-color: #FBFBF2;
@@ -1420,11 +1414,6 @@ DESKTOP - ABOUT page
     font-size: 24px;
 }
 
-/* .skillslist{
-    margin-left: -30%;
-    margin-right: -30%;
-    padding-left: 30%;
-} */
 
 #fulllogoabout{
     margin-top:0;
@@ -1472,7 +1461,8 @@ DESKTOP - ABOUT page
     .scrolling-wrapper2{
         justify-content: center;
     }
-/***********************************************
+
+    /***********************************************
 DESKTOP - SERVICES page
 ***********************************************/
 /* .dkserv{
@@ -1489,14 +1479,13 @@ DESKTOP - SERVICES page
   .dkserv img { grid-area: img; }
   .dkserv h2 { grid-area: h2; }
   .dkserv .p { grid-area: p; }
+*/
 
-.dkserv img, .ltserv img{
-    width:25%;
-}
 
-.dkserv p, .ltserv p{
+
+.dkserv p{
     text-align:left;
-} */
+} 
 /***********************************************
 DESKTOP - ERROR page
 ***********************************************/
