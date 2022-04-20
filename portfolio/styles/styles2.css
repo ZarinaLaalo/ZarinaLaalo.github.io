@@ -1056,6 +1056,57 @@ MEDIA QUERY - Tablet
             h3{
                 font-size:24px;
             }
+              /***********************************************
+TABLET - HOME Page
+***********************************************/
+.scrolling-wrapper3{
+    margin-left:0;
+    margin-right:0;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow:visible;
+}
+
+.card3{
+    margin-right:0;
+    width:100%;
+}
+.scrolling-wrapper{
+    margin-left:0;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    overflow:visible;
+}
+
+.card{
+    margin-right:0;
+}
+
+.goldenstand h2 {
+    margin-bottom:5%;
+}
+
+.goldenstand img{
+    width: 50%;
+}
+
+.thedesigner img {
+    width:75%;
+    margin-left:12.5%;
+    margin-right:12.5%;
+    margin-bottom:5%;
+    margin-top:5%;
+}
+
+.contactdesigner p {
+    margin-top:5%;
+}
+
+#moreworksbutton {
+    margin-top:5%;
+}
   /***********************************************
 TABLET - About Page
 ***********************************************/              
@@ -1427,6 +1478,15 @@ footer {
     margin-top: 20px;
 }
 /***********************************************
+DESKTOP - HOME page
+***********************************************/
+.hometitle h1, .hometitle p{
+    text-align:right;
+}
+#moreworksbutton {
+    margin-top: 0;
+}
+/***********************************************
 DESKTOP - ABOUT page
 ***********************************************/
 .abouttitle h1{
@@ -1603,6 +1663,7 @@ DESKTOP - SERVICES page
 } 
 
 .ltserv{
+    margin-left:-5%;
     display:grid;
     grid-template-columns: 1.6fr 1.3fr;
     grid-template-rows: 0.4fr 0.3fr 1.3fr 0.5fr;
@@ -1617,7 +1678,7 @@ DESKTOP - SERVICES page
 .ltserv img{
     grid-area: imga;
     width:75%;
-    margin-left:0;
+    margin-left:10%;
     margin-right:0;
 }
 
@@ -1625,6 +1686,7 @@ DESKTOP - SERVICES page
   .ltp2 { grid-area: p2a;}
   .ltserv h2 { 
       grid-area: h2a;
+  }
 /***********************************************
 DESKTOP - ERROR page
 ***********************************************/
