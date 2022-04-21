@@ -1351,6 +1351,7 @@ TABLET - WORKS Page
 
   .recentwork img:hover{
       opacity:100%;
+      transform-origin: bottom center;
       transform: scale(2);
       display:block;
   }

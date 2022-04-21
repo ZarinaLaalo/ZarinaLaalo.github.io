@@ -33,6 +33,7 @@ Also, I realized later that my navigation is not accessible by keyboard. I am st
 The following links were used to help some of the difficult interactive parts of the website:
 https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+hamburger menu and animation from Erik Terwan, 24th of November 2015, MIT License; https://codepen.io/erikterwan/pen/EVzeRP 
 
 Photographs of myself were taken by Jonathan Kuhn. Please also note that the King Eddy project, while designed by me, are based on pre-existing graphic illustrations by Luke Norrad that I vectorized. 
 The Textile Museum of Canada app also features images from their website https://textilemuseum.ca/.
