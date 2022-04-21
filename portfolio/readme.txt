@@ -26,7 +26,8 @@ I struggled a bit with some glitches using hover and animation states, so some r
 
 I suspect my desktop side nav became a major culprit to much of my challenges. Who knew z-indexes and margins would be so difficult to keep track of!?
 
-Also, I realized later that my navigation is not accessible by keyboard. I am still working this out...
+Also, I realized MUCH later that my navigation is not accessible by keyboard, I suspect because the hamburger button I found is nested within an input/button. 
+I am still working out how to fix this, but suspect I may need to redo the menus.
 
 ----
 
