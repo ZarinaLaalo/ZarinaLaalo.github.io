@@ -465,6 +465,8 @@ Mobile HOME Page
     padding-bottom:10%;
     text-align:center;
     margin-bottom:10%;
+    margin-left:-12.5%;
+    margin-right:-12.5%;
     /* margin-left:-10%;
     margin-right:-10%; */
 }
@@ -483,9 +485,9 @@ Mobile HOME Page
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  gap:10px;
+  gap:0;
   -webkit-overflow-scrolling: touch;
-  margin-left:-25%;
+  /* margin-left:-25%; */
   /* margin-right:-250px; */
 }
 
@@ -495,7 +497,11 @@ Mobile HOME Page
 
   .card {
     flex: 0 0 auto;
-    margin-right:-600px;
+    /* margin-right:-500px; */
+  }
+
+  .card img{
+      width:80%;
   }
 
   .scrolling-wrapper3{
@@ -514,7 +520,7 @@ Mobile HOME Page
   
     .card3 {
       flex: 0 0 auto;
-      width:75%
+      width:80%;
     }
 
 
@@ -1059,30 +1065,6 @@ MEDIA QUERY - Tablet
               /***********************************************
 TABLET - HOME Page
 ***********************************************/
-.scrolling-wrapper3{
-    margin-left:0;
-    margin-right:0;
-    width:100%;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    overflow:visible;
-}
-
-.card3{
-    margin-right:0;
-    width:100%;
-}
-.scrolling-wrapper{
-    margin-left:0;
-    width:100%;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    overflow:visible;
-}
-
-.card{
-    margin-right:0;
-}
 
 .goldenstand h2 {
     margin-bottom:5%;
@@ -1347,10 +1329,39 @@ TABLET - WORKS Page
       margin:0;
   }
 }
+
+/* Homepage Screen switch (Recent Works) ; this size works best for this layout to start */
+@media screen and (min-width: 990px){
+.scrolling-wrapper3{
+    margin-left:0;
+    margin-right:0;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow:visible;
+}
+
+.card3{
+    margin-right:0;
+    width:100%;
+}
+.scrolling-wrapper{
+    margin-left:0;
+    width:100%;
+    display:grid;
+    row-gap:30px;
+    grid-template-columns: 1fr 1fr;
+    overflow:visible;
+}
+
+.card{
+    margin-right:0;
+}
+} 
+
 /***********************************************
 MEDIA QUERY - DESKTOP
 ***********************************************/
-      
 @media screen and (min-width: 1200px){
 .body{
     max-width:1600px;}
@@ -1484,7 +1495,46 @@ DESKTOP - HOME page
     text-align:right;
 }
 #moreworksbutton {
-    margin-top: 0;
+    margin-top: 7%;
+}
+
+.scrolling-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card img{
+    width:80%;
+}
+
+.btmgrp{
+    display:flex;
+    column-gap:30px;
+    justify-content: center;
+    align-items: center;
+    margin-left:-10%;
+    margin-right:-10%;
+}
+
+.thedesigner{
+    display:flex;
+    flex-direction:column-reverse;
+    flex-wrap:nowrap;
+    width:120%;
+}
+
+.thedesigner img{
+    margin:0;
+    width:100%;
+}
+
+.thedesigner h2{
+    flex-wrap:wrap;
+    margin-top:20px;
+    text-align:left;       
+}
+
+#moreworkbutton{
+    align-self:flex-end;
 }
 /***********************************************
 DESKTOP - ABOUT page
