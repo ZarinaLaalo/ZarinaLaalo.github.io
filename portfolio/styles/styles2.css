@@ -442,8 +442,8 @@ button{
     border-radius: 57px;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: capitana, sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -648,10 +648,10 @@ Mobile About Page
         #cvbutton {
             background-color: #ED1C24;
             border-radius: 57px;
-            padding-left: 4%;
-            padding-right: 4%;
-            padding-top: 3%;
-            padding-bottom: 3%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 20px;
+            padding-bottom: 20px;
             font-family: capitana, sans-serif;
             font-weight: 900;
             font-style: normal;
@@ -792,8 +792,8 @@ Mobile Contact Page
             border-radius: 57px;
             padding-left: 5%;
             padding-right: 5%;
-            padding-top: 3%;
-            padding-bottom: 3%;
+            padding-top: 20px;
+            padding-bottom: 20px;
             font-family: capitana, sans-serif;
             font-weight: 900;
             font-style: normal;
