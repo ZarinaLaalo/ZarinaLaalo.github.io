@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/styles2.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/xsv1yss.css" rel="stylesheet">
-    <title>Portfolio Works Page</title>
+    <link href="https://use.typekit.net/xsv1yss.css" rel="stylesheet">
+    <title>GCC Portfolio - Works Page</title>
+    <link rel="shortcut icon" type="image/svg" href="icons/logo.svg"/>
 </head>
 
 <body>
     <header>
-        <nav role="navigation">
+        <nav>
             <!-- hamburger menu -->
             <div id="menuToggle">
                 <input type="checkbox" />
@@ -24,7 +25,7 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="works.html" style="color:#E79B31">WORKS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
@@ -40,17 +41,17 @@
             <h1>WORKS<span class="yellowdot">.</span></h1>
             <section class="sortby">
                 <ul id="sort">
-                    <li><a href="works.html">ALL WORKS</a></li>
-                    <li><a href="works.html">UX / UI DESIGN</a></li>
-                    <li><a href="works.html">BRANDING / IDENTITY</a></li>
-                    <li><a href="works.html">PRODUCTION / STORYTELLING</a></li>
-                    <li><a href="works.html">PUBLIC ENGAGEMENT</a></li>
+                    <li tabindex="0"><a href="works.html">ALL WORKS</a></li>
+                    <li tabindex="0"><a href="works.html">UX / UI DESIGN</a></li>
+                    <li tabindex="0"><a href="works.html">BRANDING / IDENTITY</a></li>
+                    <li tabindex="0"><a href="works.html">PRODUCTION / STORYTELLING</a></li>
+                    <li tabindex="0"><a href="works.html">PUBLIC ENGAGEMENT</a></li>
                 </ul>
             </section>
             <section class="projectimgs">
                 <div>
                     <div class="worksimg">
-                    <a href="error.html"><img src="images/works/txtmuseum-900.jpg" id="kingeddy" alt=" images of king eddy website mockup"></a></div>
+                    <a href="error.html"><img src="images/works/txtmuseum-900.jpg" id="txtmu" alt=" images of king eddy website mockup"></a></div>
                     <div class="textbox">
                         <p>TEXTILE MUSEUM APP</p><span>UX/UI DESIGN</span></div>
                 </div>
@@ -120,7 +121,7 @@
         </div>
 
     </main>
-    <section class="backtotopbuttons">
+    <div class="backtotopbuttons">
         <div class="backtotopmobile">
             <button onclick="topFunction()" id="myBtn1" title="Go to top"> 
                     <picture>
@@ -153,7 +154,7 @@
                 }
             </script>
         </div>
-    </section>
+    </div>
 
 
     <footer>

@@ -432,7 +432,7 @@ Mobile HOME Page
     margin-bottom:10%;      
 }
 
-#moreworksbutton{
+#moreworksbutton, #contactbutton{
     background-color: #ED1C24;
     border-radius: 57px;
     padding-left: 5%;
@@ -447,12 +447,9 @@ Mobile HOME Page
     margin-top: 10%;
     color: #FBFBF2;
     justify-content:center;
-}
-
-#moreworksbutton a{
-    color:#FBFBF2;
     text-decoration:none;
 }
+
 
 .homebutton{
     text-align:center;
@@ -618,7 +615,6 @@ Mobile About Page
             text-align: center;
             line-height: 125%;
             color: #FBFBF2;
-            position: center;
         }
         
         .aboutdesigner p {
@@ -635,19 +631,20 @@ Mobile About Page
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center
+            justify-content: center;
+            margin-bottom:5%;
         }
         
         .aboutexperience h2 {
             margin-top: 10%;
-            margin-bottom: 10%;
+            margin-bottom: 5%;
         }
         
         #cvbutton {
             background-color: #ED1C24;
             border-radius: 57px;
-            padding-left: 2%;
-            padding-right: 2%;
+            padding-left: 4%;
+            padding-right: 4%;
             padding-top: 3%;
             padding-bottom: 3%;
             font-family: capitana, sans-serif;
@@ -655,14 +652,11 @@ Mobile About Page
             font-style: normal;
             border: none;
             box-shadow: none;
-            margin-top: 10%;
+            margin-top: 5%;
+            text-decoration:none;
             color: #FBFBF2;
         }
         
-        #cvbutton a {
-            text-decoration: none;
-            color: #FBFBF2;
-        }
         
         .aboutexperiencefull h3 {
             margin-top: 10%;
@@ -715,8 +709,6 @@ Mobile About Page
             flex-wrap: nowrap;
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
-            padding-left:-20px;
-            padding-right:-40px;
         }
 
         .card2{
@@ -1259,7 +1251,6 @@ TABLET - CONTACT Page
 .contactdirect{
     display:flex;
     justify-content:space-between;
-    flex-wrap:no-wrap;
     column-gap:10%;
 }
 
@@ -1343,7 +1334,7 @@ TABLET - WORKS Page
   /* RECENT WORKS ANIMATIONS */
 
   .recentwork img{
-      opacity:30%;
+      /* opacity:30%; */
       transition: transform .2s;
       margin-bottom:10%;
   }
@@ -1487,7 +1478,6 @@ nav {
 footer {
     width:80%;
     padding-left: 20%;
-    padding-bottom: -20px;
     padding-top: 20px;
     margin-bottom: 0;
     /* margin-left: 2%; */
@@ -1817,7 +1807,7 @@ DESKTOP - Back to Top BUTTON
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: none;
+    background: none;
     /* Set a background color */
     cursor: pointer;
     /* Add a mouse pointer on hover */

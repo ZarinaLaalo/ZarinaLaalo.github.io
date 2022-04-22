@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/styles2.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/xsv1yss.css" rel="stylesheet">
-    <title>Portfolio Contact Page</title>
+    <link href="https://use.typekit.net/xsv1yss.css" rel="stylesheet">
+    <title>GCC Portfolio - Contact Page</title>
+    <link rel="shortcut icon" type="image/svg" href="icons/logo.svg"/>
 </head>
 
 <body>
     <header>
-        <nav role="navigation">
+        <nav>
             <!-- hamburger menu -->
             <div id="menuToggle">
                 <input type="checkbox" />
@@ -21,11 +22,11 @@
                 <span></span>
                 <!-- links -->
                 <ul id="menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="works.html">WORKS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li tabindex="0"><a href="index.html">HOME</a></li>
+                    <li tabindex="0"><a href="about.html">ABOUT</a></li>
+                    <li tabindex="0"><a href="services.html">SERVICES</a></li>
+                    <li tabindex="0"><a href="works.html">WORKS</a></li>
+                    <li tabindex="0"><a href="contact.html" style="color:#E79B31">CONTACT</a></li>
                 </ul>
             </div>
             <!-- title in nav bar (only for horizontal menu; hide display for vertical menu) -->
@@ -59,9 +60,9 @@
                                     <input type="text" id="email" name="email" required placeholder="joe@schmoe.com">
                                 </div>
                                 <label for="message">Message*</label>
-                                <textarea type="text" id="message" name="message" required></textarea>
+                                <textarea id="message" name="message" required></textarea>
                                 <div class="formbutton">
-                                    <button type="submit" form="formbox" name="submit" class="redbutton" id="sbutton" value="Send">SUBMIT</button>
+                                    <button type="submit" name="submit" class="redbutton" id="sbutton" value="submit">SUBMIT</button>
                                 </div>
                             </form>
                         </div>
@@ -73,7 +74,7 @@
                     <div class="r2">
                     <img src="icons/phone.svg" id="phone" alt="phone icon">
                     <p>(613) 123-4567</p>
-                    <img src="icons/envelope.svg" id="email" alt="envelope icon">
+                    <img src="icons/envelope.svg" id="emailicon" alt="envelope icon">
                     <p>laal0007@algonquinlive.com</p>
                     <img src="icons/location.svg" id="location" alt="geotracker icon">
                     <p>Ottawa, ON, Canada</p>

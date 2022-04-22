@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/styles2.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/xsv1yss.css" rel="stylesheet">
-    <title>GCC Portfolio Home Page</title>
+    <link href="https://use.typekit.net/xsv1yss.css" rel="stylesheet">
+    <title>GCC Portfolio - Home Page</title>
     <link rel="shortcut icon" type="image/svg" href="icons/logo.svg"/>
 </head>
 
@@ -22,11 +22,11 @@
                 <span></span>
                 <!-- links -->
                 <ul id="menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="works.html">WORKS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li tabindex="0"><a href="index.html" style="color:#E79B31;">HOME</a></li>
+                    <li tabindex="0"><a href="about.html">ABOUT</a></li>
+                    <li tabindex="0"><a href="services.html">SERVICES</a></li>
+                    <li tabindex="0"><a href="works.html">WORKS</a></li>
+                    <li tabindex="0"><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
             <!-- title in nav bar (only for horizontal menu; hide display for vertical menu) -->
@@ -48,19 +48,19 @@
                 <h2>RECENT WORK<span class="yellowdot">.</span></h2>
                 <div class="scrolling-wrapper3">
                 <div class="card3" id ="keslide">
-                    <a href="error.html"><img src="images/works/kingeddy-900.jpg" id="keslide" alt="King Eddy Mockup Website"></a>
+                    <a href="error.html"><img src="images/works/kingeddy-900.jpg" id="keslide2" alt="King Eddy Mockup Website"></a>
                     <h3>THE KING EDDY</h3>
                     <p>UX/UI DESIGN</p>
                     <p>A clever website re-design that utilizes UX/UI to offer better solutions towards client/user goals.</p>
                 </div>
                 <div class="card3" id="ssslide">
-                    <a href="error.html"><img src="images/works/sweetsentiments-900.jpg" id="ssslide" alt="Sweet Sentiments Mockup Website"></a>
+                    <a href="error.html"><img src="images/works/sweetsentiments-900.jpg" id="ssslide2" alt="Sweet Sentiments Mockup Website"></a>
                     <h3>SWEET SENTIMENTS</h3>
                     <p>BRANDING/IDENTITY</p>
                     <p>Branding and identity development to widen demographic of target market audience.</p>
                 </div>
                 <div class="card3" id="ckslide">
-                    <a href="error.html"><img src="images/works/ckd-900.jpg" id="ckslide" alt="Man writing in notebook"></a>
+                    <a href="error.html"><img src="images/works/ckd-900.jpg" id="ckslide2" alt="Man writing in notebook"></a>
                     <h3>CKD INTERVIEW</h3>
                     <p>PRODUCTION/STORYTELLING</p>
                     <p>A video production about finding new purpose and passion through the study of user experience design.</p>
@@ -68,7 +68,8 @@
             </div>
             
                 <div  class="homebutton">
-                <button id="moreworksbutton"> <a href="works.html">MORE WORKS </a></button>
+                <button id="moreworksbutton" onclick="window.location.href ='works.html'"> MORE WORKS </button>
+
             </div>
             </section>
             <section class="goldenstand">
@@ -80,7 +81,7 @@
                   <div class="card"><img src="images/home/pub-877.png" id="pubst" alt="PUBLIC ENGAGEMENT:An emphasis on community and cultural experiences."></div>
                 </div>
                 </section>
-            <div class="ins"> <  swipe for more ></div>
+            <div class="ins"> &lt;  swipe for more ></div>
             <section class="btmgrp">
             <div class="thedesigner">
                 <h2>THE DESIGNER<span class="yellowdot">.</span></h2>
@@ -95,7 +96,7 @@
                 <p>Like what you see? Let's collaborate on a project! <span>golden child creations.</span> can offer out-of-the-box thinking, creative expertise, and quality results. Click the button below to send a message about working together.
                 </p>
                 <div class="homebutton">
-                    <button id="moreworksbutton"> <a href="contact.html">CONTACT ME </a></button>
+                    <button id="contactbutton" onclick="window.location.href ='contact.html'"> CONTACT ME </button>
                 </div>
             </div>
         </section>
