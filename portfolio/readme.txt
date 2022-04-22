@@ -22,12 +22,8 @@ I started by creating a "template" page with my mobile/tablet nav and footer, an
 But once this template was created, I was able to play with the body for each individual page successfully starting with the mobile version and working my way up (leaving the Home page and its animations for last). I really made an effort to find breaking points, and worked with less source set images, but organized 
 the layout in a way that I only needed one or two optimized img files. I could have been more efficient in creating classes to avoid re-using so many lines of code for things like text and formatting -- I will keep this in mind for the next project. 
 
-I struggled a bit with some glitches using hover and animation states, so some remain from the mockup and some were removed. Comments are added in the CSS for particularly perplexing things. 
-
-I suspect my desktop side nav became a major culprit to much of my challenges. Who knew z-indexes and margins would be so difficult to keep track of!?
-
-Also, I realized MUCH later that my navigation is not accessible by keyboard, I suspect because the hamburger button I found is nested within an input/button. 
-I am still working out how to fix this, but suspect I may need to redo the menus.
+I struggled a bit with some glitches using hover and animation states, so some remain from the mockup and some were removed. Comments are added in the CSS for particularly perplexing things. I suspect my desktop side nav became a major culprit to much of my challenges. Who knew z-indexes and margins would be so difficult to keep track of!? Also, I only realized MUCH later that my navigation is not accessible by keyboard, I suspect because the hamburger button I found is nested within an input/button. 
+I am still working out how to fix this, but suspect I may need to redo the menus. During the summer and as I continue to tweak this portfolio for personal purposes, I will likely rework elements for accessibility and also add more ARIA tags.
 
 ----
 

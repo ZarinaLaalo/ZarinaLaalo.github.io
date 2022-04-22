@@ -409,6 +409,7 @@ Mobile Button Back to Top
         /***********************************************
 Mobile HOME Page
 ***********************************************/
+
 .hometitle h1{
     color:#393E41;
 }
@@ -430,6 +431,10 @@ Mobile HOME Page
 
 .recentwork h2{
     margin-bottom:10%;      
+}
+
+button{
+    cursor: pointer;
 }
 
 #moreworksbutton, #contactbutton{
@@ -1330,22 +1335,6 @@ TABLET - WORKS Page
   .zimg{
       margin:0;
   }
-
-  /* RECENT WORKS ANIMATIONS */
-
-  .recentwork img{
-      /* opacity:30%; */
-      transition: transform .2s;
-      margin-bottom:10%;
-  }
-
-
-  .recentwork img:hover{
-      opacity:100%;
-      transform-origin: bottom center;
-      transform: scale(2);
-      display:block;
-  }
 }
 
 /* Homepage Screen switch (Recent Works) ; this size works best for this layout to start */
@@ -1386,6 +1375,24 @@ TABLET - WORKS Page
 .card img{
     width:60%;
 }
+
+  /* RECENT WORKS ANIMATIONS */
+
+  .recentwork img{
+      /* Cannot add opacity to image without it being glitchy; part of the image is still translucent
+      during hover */
+    /* opacity:30%; */
+    transition: transform .2s;
+    margin-bottom:10%;
+}
+
+
+.recentwork img:hover{
+    opacity:100%;
+    transform-origin: bottom center;
+    transform: scale(2);
+    display:block;
+}
 } 
 
 /***********************************************
@@ -1408,10 +1415,6 @@ MEDIA QUERY - DESKTOP
     font-size:16px;
    }
 
-   /* .aboutdesigner{
-       margin-left:-30%;
-       margin-right:-30%;
-   } */
 
     .container {
         max-width: 1400px;
@@ -1453,7 +1456,8 @@ nav {
 #menuToggle span {
     display: none;
 }
-/* WHY DOES HOVER STATE MAKE MY NAV BECOME GLITCHY? It works until I start to scroll through the page */
+/* WHY DOES HOVER STATE MAKE MY NAV BECOME GLITCHY? It works until I start to 
+scroll through the page; I suspect it has something to do with the script/back to top button */
 /* #menuToggle a:hover{
     color:#E79B31;
 } */
